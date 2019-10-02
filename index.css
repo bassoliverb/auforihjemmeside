@@ -59,3 +59,18 @@ main > .logo {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  width: 8rem;
+  height: 8rem;
+  opacity: 0.5;
+  transition: ease-out;
+}
+
+.footer img:hover {
+  opacity: 1;
+}
