@@ -73,13 +73,13 @@ nav > ul {
 nav > ul > li {
   float: left;
   list-style: none;
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
 
 nav a {
   color: #1d1d1d;
   text-decoration: none;
-  padding-bottom: 0.2rem;
+  padding: 0 0.6rem 0.2rem;
 }
 
 nav a:visited {

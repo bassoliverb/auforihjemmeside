@@ -15,7 +15,7 @@ main {
 
 .details {
   width: 35%;
-  padding: 15rem 5rem 0;
+  padding: 18rem 5rem 0;
   background-color: #e8e8e3;
 }
 
@@ -30,7 +30,7 @@ main {
 }
 
 .details li {
-  font-size: 2.5rem;
+  font-size: 2rem;
   list-style: none;
 }
 

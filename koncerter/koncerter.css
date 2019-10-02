@@ -1,16 +1,9 @@
 .concerts {
   width: 100%;
-  border-radius: 0.6rem;
   margin-top: 10rem;
   font-size: 2.2rem;
-  box-shadow: 0px 2px 10px 0px #aaa;
-  overflow: hidden;
 }
 
 main {
   padding-top: 8rem;
-}
-
-.concerts > div{
-background-color: rgb(255,210,46);
 }
