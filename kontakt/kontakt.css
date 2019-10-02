@@ -36,4 +36,15 @@ main {
 
 .image {
   width: 65%;
+  background-color: #e8e8e3;
+}
+
+.image::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+  background-image: url(/images/kontaktbillede.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
