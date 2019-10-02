@@ -1,0 +1,29 @@
+{
+  "name": "auforihjemmeside",
+  "version": "1.0.0",
+  "description": "Dette er for vildt!",
+  "main": "global.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ./build",
+    "watch": "html-bricks --watch",
+    "build": "html-bricks",
+    "start": "run-p watch serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bassoliverb/auforihjemmeside.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bassoliverb/auforihjemmeside/issues"
+  },
+  "homepage": "https://github.com/bassoliverb/auforihjemmeside#readme",
+  "dependencies": {
+    "html-bricks": "0.0.4",
+    "npm-run-all": "^4.1.5",
+    "serve": "^11.2.0"
+  }
+}
