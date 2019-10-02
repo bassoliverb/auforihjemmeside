@@ -1,0 +1,61 @@
+nav {
+  height: 6rem;
+  font-size: 1.8rem;
+  padding: 2rem;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav > ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  float: left;
+  list-style: none;
+  margin-left: 5rem;
+}
+
+nav a {
+  color: #1d1d1d;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+}
+
+nav a:visited {
+  color: #1d1d1d;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #bebebe;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main > .logo {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(images/Logoubaggrund.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
