@@ -1,0 +1,17 @@
+main {
+  padding-top: 8rem;
+}
+
+.column {
+  width: 40rem;
+  margin: 10rem auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
