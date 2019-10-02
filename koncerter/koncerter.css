@@ -1,0 +1,10 @@
+.concerts {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-top: 10rem;
+}
+
+main {
+  padding-top: 8rem;
+}

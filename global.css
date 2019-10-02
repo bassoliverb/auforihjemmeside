@@ -1,6 +1,6 @@
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   position: relative;
@@ -8,6 +8,10 @@ html, body {
 
 body {
   font-family: 'Source Serif Pro', serif;
+  width: 100rem;
+  margin: 0 auto;
+  padding-bottom: 14rem;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,4 +20,72 @@ html {
 
 body * {
   box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer img {
+  width: 5rem;
+  height: 5rem;
+  opacity: 0.3;
+  transition: opacity 0.2s ease-out;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+nav {
+  height: 8rem;
+  font-size: 1.8rem;
+  padding: 4rem 0 2rem;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav > ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  float: left;
+  list-style: none;
+  margin-left: 5rem;
+}
+
+nav a {
+  color: #1d1d1d;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+}
+
+nav a:visited {
+  color: #1d1d1d;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #bebebe;
 }
