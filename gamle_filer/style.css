@@ -1,0 +1,67 @@
+body,html{
+	background-color: #FAFAFA;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.top{
+	width: 100%;
+	position: auto;
+}
+
+.intro{
+	width: 100%;
+	height: 100%;
+}
+
+.intro img{
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+ 	/*padding-top: 25vh;*/
+ 	height: 100vh;
+ 	padding: 0px;
+ 	position: auto;
+}
+
+.mainbar{
+	/*background-color: blue;*/
+	width: 100%;
+	height: 70px;
+	float: right;
+	/*position: fixed;*/
+}
+.mainbar ul{
+	list-style: none;
+	display: inline-block;
+	width: auto;
+	/*padding: 2px;					/* Her hvor meget baren skal rykkes ud til siderne*/
+	/*margin-top: 35px;			 	/*Her hvor meget baren skal rykkes ned fra toppen*/
+	margin-right: 1.1em;			/*Distance fra kant af skærm til slut af navbar*/
+	float: right;
+	font-size: 1em;
+	/*font-weight: 400;*/
+	padding-top: 25px;
+}
+
+.mainbar ul li{
+	color: black;
+	width: 5.5em;						/* Hvor meget plads er der ved siden af teksten*/
+	float: left;					/* Her får jeg dem til at flyde ved siden af hindanden*/
+	/*border: .066rem solid white;*/
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.mainbar ul a{
+	text-decoration: none;
+	color: black;
+}
+
+.kontakt {
+	background-color: yellow;
+	width: 200px;
+	height: 400px;
+	position: fixed;
+}
