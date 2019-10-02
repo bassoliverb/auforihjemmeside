@@ -6,7 +6,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  right: 0;
 }
 
 nav::after {
@@ -42,16 +42,12 @@ nav a:hover {
 }
 
 main {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 
 main > .logo {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   background-image: url(images/Logoubaggrund.png);
@@ -62,13 +58,14 @@ main > .logo {
 
 .footer {
   text-align: center;
+  padding: 1rem 0 5rem;
 }
 
 .footer img {
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   opacity: 0.5;
-  transition: ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
 .footer img:hover {

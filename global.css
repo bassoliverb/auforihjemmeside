@@ -6,6 +6,10 @@ html, body {
   position: relative;
 }
 
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
 html {
   font-size: 62.5%;
 }
