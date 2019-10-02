@@ -10,7 +10,7 @@ body {
   font-family: 'Source Serif Pro', serif;
   width: 100rem;
   margin: 0 auto;
-  padding-bottom: 14rem;
+  padding-bottom: 20rem;
   box-sizing: border-box;
 }
 
@@ -88,4 +88,10 @@ nav a:visited {
 
 nav a:hover {
   border-bottom: 1px solid #bebebe;
+}
+
+main::after {
+  display: table;
+  clear: both;
+  content: "";
 }
