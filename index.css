@@ -56,18 +56,22 @@ main > .logo {
   background-repeat: no-repeat;
 }
 
-.footer {
+footer {
   text-align: center;
   padding: 1rem 0 5rem;
 }
 
-.footer img {
+footer a {
+  margin: 0 1rem;
+}
+
+footer img {
   width: 5rem;
   height: 5rem;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity 0.2s ease-out;
 }
 
-.footer img:hover {
+footer img:hover {
   opacity: 1;
 }
