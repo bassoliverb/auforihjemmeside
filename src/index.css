@@ -7,7 +7,7 @@ main > .logo {
   width: 100%;
   height: 100vh;
 
-  background-image: url(images/Logoubaggrund.png);
+  background-image: url(/images/logoubaggrund.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
