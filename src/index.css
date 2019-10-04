@@ -5,7 +5,7 @@ main {
 
 main > .logo {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 
   background-image: url(images/Logoubaggrund.png);
   background-position: center;
