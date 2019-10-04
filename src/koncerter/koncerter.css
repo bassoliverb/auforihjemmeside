@@ -7,3 +7,9 @@
 main {
   padding-top: 8rem;
 }
+
+@media screen and (max-width: 500px) {
+  .concerts {
+    margin-top: 2rem;
+  }
+}
