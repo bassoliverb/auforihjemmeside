@@ -13,12 +13,19 @@ footer a {
 }
 
 footer img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   opacity: 0.3;
   transition: opacity 0.2s ease-out;
 }
 
 footer img:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  footer img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
