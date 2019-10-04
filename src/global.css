@@ -51,53 +51,6 @@ footer img:hover {
   opacity: 1;
 }
 
-nav {
-  height: 8rem;
-  font-size: 1.8rem;
-  padding: 4rem 0 2rem;
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-nav::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-nav > ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-nav > ul > li {
-  float: left;
-  list-style: none;
-  margin-left: 4rem;
-}
-
-nav a {
-  color: #1d1d1d;
-  text-decoration: none;
-  padding: 0 0.6rem 0.2rem;
-}
-
-nav a:visited {
-  color: #1d1d1d;
-}
-
-nav a:hover {
-  border-bottom: 1px solid #bebebe;
-}
-
-nav .nav-toggle {
-  display: none;
-}
-
 main::after {
   display: table;
   clear: both;
@@ -107,61 +60,5 @@ main::after {
 @media screen and (max-width: 1000px) {
   body {
     width: 100%;
-  }
-
-  nav {
-    background: transparent;
-  }
-
-  nav.open {
-    height: 100vh;
-    width: 100vw;
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-  }
-
-  nav > ul {
-    float: none;
-    display: block;
-    padding: 0;
-    opacity: 0;
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
-    transition: all 0.2s ease-out;
-  }
-
-  nav.open > ul {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-
-  nav > ul > li {
-    float: none;
-    margin: 1rem 0;
-    text-align: center;
-  }
-
-  nav .nav-toggle {
-    display: block;
-    position: fixed;
-    background-image: url(/images/menu.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    border: none;
-    top: 1rem;
-    left: 1rem;
-    width: 4rem;
-    height: 4rem;
-    opacity: 0.5;
-    outline: none;
-    z-index: 1000;
-  }
-
-  nav.open .nav-toggle {
-    background-image: url(/images/close.png);
   }
 }
