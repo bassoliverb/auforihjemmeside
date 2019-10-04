@@ -1,0 +1,24 @@
+footer {
+  text-align: center;
+  padding: 1rem 0 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer img {
+  width: 5rem;
+  height: 5rem;
+  opacity: 0.3;
+  transition: opacity 0.2s ease-out;
+}
+
+footer img:hover {
+  opacity: 1;
+}
