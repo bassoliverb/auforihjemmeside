@@ -26,6 +26,6 @@
     "serve": "^11.2.0"
   },
   "devDependencies": {
-    "html-bricks": "^0.1.4"
+    "html-bricks": "^0.3.3"
   }
 }
