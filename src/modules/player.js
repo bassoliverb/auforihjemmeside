@@ -30,6 +30,7 @@ window.playSong = function playSong (id) {
 
   if (currentAudio) {
     currentAudio.pause()
+    document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
   }
 
   currentSong = id
