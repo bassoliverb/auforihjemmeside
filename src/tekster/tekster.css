@@ -18,6 +18,13 @@ p {
   line-height: 2.2rem;
 }
 
+.song-begin-play {
+  background-color: #f8f7f3;
+  box-shadow: 0 0.2rem 1rem 0px #ddd;
+  border: 0;
+  outline: none;
+}
+
 @media screen and (max-width: 767px) {
   .column {
     width: 100%;

@@ -1,11 +1,17 @@
 <module:head>
   <link rel="stylesheet" href="/modules/player.css" type="text/css">
+  <script type="text/javascript" src="/modules/player.js"></script>
 </module:head>
 
-<div id="player">
-  <p class="song-title">Sang titel</p>
-  <p class="song-time">0:23 / 3:32</p>
-  <button aria-label="play button">
-    <img src="/images/pause-icon.svg">
-  </button>
+<div class="player hidden" id="player">
+  <div class="player-body">
+    <p class="song-title" id="song-title"></p>
+    <p class="song-time" id="song-time"></p>
+    <div class="player-button">
+      <button aria-label="play button" onclick="toggleSong()">
+        <img id="button-pause-icon" src="/images/pause-icon.svg">
+        <img id="button-play-icon" class="hidden" src="/images/play-icon.svg">
+      </button>
+    </div>
+  </div>
 </div>

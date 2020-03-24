@@ -1,14 +1,55 @@
-#player {
+.player {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: 0px 0px 5px 0px #ccc;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  background-color: #fff;
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s ease-out;
+}
+
+.player-body {
+  margin: 0 auto;
+  width: 100rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
+  height: 6rem;
 }
 
-#player .song-title {
+.player .song-title {
+  flex-grow: 0;
+  margin: 0 1.6rem 0 0;
+  font-weight: bold;
+}
+
+.player .song-time {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.player .player-button {
+  flex-grow: 0;
+  margin: 0;
+}
+
+.player-button button {
+  background: transparent;
+  border: 0;
+  padding: 1.6rem;
+  outline: none;
+}
+
+.player-button button img {
+  height: 2.5rem;
+}
+
+.player-button .hidden {
+  display: none;
+}
+
+.player.hidden {
+  transform: translate3d(0, 100%, 0)
 }

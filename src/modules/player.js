@@ -1,0 +1,53 @@
+const songs = {
+  aabne_favne: {
+    src: '/audio/aabne_favne.mp3',
+    title: 'Åbne Favne'
+  }
+}
+
+let currentAudio = null
+
+function padNum (n) {
+  return n < 10 ? '0' + n : n
+}
+
+function formatTime (time) {
+  const hours = Math.floor(time / 3600)
+  const minutes = Math.floor((time % 3600) / 60)
+  const seconds = Math.floor((time % 60))
+
+  if (hours) {
+    return hours + ':' + padNum(minutes) + ':' + padNum(seconds)
+  }
+  return minutes + ':' + padNum(seconds)
+}
+
+window.playSong = function playSong (id) {
+  const song = songs[id]
+
+  const audio = new window.Audio(song.src)
+  currentAudio = audio
+  audio.addEventListener('canplay', function () {
+    audio.play()
+    document.getElementById('player').classList.remove('hidden')
+    document.getElementById('song-title').innerText = song.title
+    document.getElementById('song-time').innerText = '0:00 / ' + formatTime(audio.duration)
+    document.getElementById('button-play-icon').classList.add('hidden')
+    document.getElementById('button-pause-icon').classList.remove('hidden')
+  })
+  audio.addEventListener('timeupdate', function () {
+    document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
+  })
+}
+
+window.toggleSong = function toggleSong () {
+  if (currentAudio.paused) {
+    currentAudio.play()
+    document.getElementById('button-play-icon').classList.add('hidden')
+    document.getElementById('button-pause-icon').classList.remove('hidden')
+  } else {
+    currentAudio.pause()
+    document.getElementById('button-play-icon').classList.remove('hidden')
+    document.getElementById('button-pause-icon').classList.add('hidden')
+  }
+}
