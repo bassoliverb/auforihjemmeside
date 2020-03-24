@@ -7,6 +7,7 @@
   background-color: #fff;
   transform: translate3d(0, 0, 0);
   transition: transform .5s ease-out;
+  z-index: 10000000000000;
 }
 
 .player-body {
@@ -52,4 +53,11 @@
 
 .player.hidden {
   transform: translate3d(0, 100%, 0)
+}
+
+@media screen and (max-width: 1000px) {
+  .player-body {
+    width: 100%;
+    padding-left: 1.6rem;
+  }
 }

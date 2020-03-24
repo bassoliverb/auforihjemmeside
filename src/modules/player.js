@@ -6,6 +6,7 @@ const songs = {
 }
 
 let currentAudio = null
+let currentSong = null
 
 function padNum (n) {
   return n < 10 ? '0' + n : n
@@ -23,6 +24,11 @@ function formatTime (time) {
 }
 
 window.playSong = function playSong (id) {
+  if (currentSong === id) {
+    return window.toggleSong()
+  }
+
+  currentSong = id
   const song = songs[id]
 
   const audio = new window.Audio(song.src)
@@ -34,6 +40,7 @@ window.playSong = function playSong (id) {
     document.getElementById('song-time').innerText = '0:00 / ' + formatTime(audio.duration)
     document.getElementById('button-play-icon').classList.add('hidden')
     document.getElementById('button-pause-icon').classList.remove('hidden')
+    document.getElementById('song-play-' + id).src = '/images/pause-icon.svg'
   })
   audio.addEventListener('timeupdate', function () {
     document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
@@ -45,9 +52,11 @@ window.toggleSong = function toggleSong () {
     currentAudio.play()
     document.getElementById('button-play-icon').classList.add('hidden')
     document.getElementById('button-pause-icon').classList.remove('hidden')
+    document.getElementById('song-play-' + currentSong).src = '/images/pause-icon.svg'
   } else {
     currentAudio.pause()
     document.getElementById('button-play-icon').classList.remove('hidden')
     document.getElementById('button-pause-icon').classList.add('hidden')
+    document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
   }
 }
