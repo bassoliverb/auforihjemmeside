@@ -1,0 +1,14 @@
+#player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+#player .song-title {
+}
