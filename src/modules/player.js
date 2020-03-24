@@ -28,6 +28,10 @@ window.playSong = function playSong (id) {
     return window.toggleSong()
   }
 
+  if (currentAudio) {
+    currentAudio.pause()
+  }
+
   currentSong = id
   const song = songs[id]
 
@@ -44,6 +48,13 @@ window.playSong = function playSong (id) {
   })
   audio.addEventListener('timeupdate', function () {
     document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
+  })
+  audio.addEventListener('ended', function () {
+    document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
+    document.getElementById('player').classList.add('hidden')
+    audio.pause()
+    currentAudio = null
+    currentSong = null
   })
 }
 
