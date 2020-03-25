@@ -18,14 +18,11 @@ main {
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px #ddd;
   margin: 3.8rem 3.8rem 0 0;
-  position: sticky;
-  top: 2rem;
 }
 
 .column > .img-track {
   grid-column: 1;
   justify-self: end;
-  padding-bottom: 25vh;
 }
 
 h1 {
