@@ -3,8 +3,29 @@ main {
 }
 
 .column {
-  width: 40rem;
-  margin: 10rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 40rem 1fr;
+  margin-top: 10rem;
+}
+
+.text-track {
+  grid-column: 2 / 4;
+  margin-bottom: 4rem;
+}
+
+.column > .img-track > img {
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #ddd;
+  margin: 3.8rem 3.8rem 0 0;
+  position: sticky;
+  top: 2rem;
+}
+
+.column > .img-track {
+  grid-column: 1;
+  justify-self: end;
+  padding-bottom: 25vh;
 }
 
 h1 {
@@ -30,5 +51,22 @@ p {
     width: 100%;
     margin: 0;
     padding: 0 5rem;
+    display: block;
+  }
+
+  .column > .img-track {
+    padding-bottom: 0;
+  }
+
+  .column > .img-track > img {
+    position: static;
+    margin: 4rem 0 0;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .column > .img-track > img {
+    width: 100px;
+    margin: 3rem 0 0;
   }
 }
