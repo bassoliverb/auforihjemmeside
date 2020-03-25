@@ -46,17 +46,12 @@ window.playSong = function playSong (id) {
     document.getElementById('button-play-icon').classList.add('hidden')
     document.getElementById('button-pause-icon').classList.remove('hidden')
     document.getElementById('song-play-' + id).src = '/images/pause-icon.svg'
+    document.getElementById('button-stop').classList.add('hidden')
   })
   audio.addEventListener('timeupdate', function () {
     document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
   })
-  audio.addEventListener('ended', function () {
-    document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
-    document.getElementById('player').classList.add('hidden')
-    audio.pause()
-    currentAudio = null
-    currentSong = null
-  })
+  audio.addEventListener('ended', window.stopSong)
 }
 
 window.toggleSong = function toggleSong () {
@@ -65,10 +60,23 @@ window.toggleSong = function toggleSong () {
     document.getElementById('button-play-icon').classList.add('hidden')
     document.getElementById('button-pause-icon').classList.remove('hidden')
     document.getElementById('song-play-' + currentSong).src = '/images/pause-icon.svg'
+    document.getElementById('button-stop').classList.add('hidden')
   } else {
     currentAudio.pause()
     document.getElementById('button-play-icon').classList.remove('hidden')
     document.getElementById('button-pause-icon').classList.add('hidden')
     document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
+    document.getElementById('button-stop').classList.remove('hidden')
+  }
+}
+
+window.stopSong = function stopSong () {
+  if (currentSong && currentAudio) {
+    document.getElementById('song-play-' + currentSong).src = '/images/play-icon.svg'
+    document.getElementById('button-stop').classList.add('hidden')
+    document.getElementById('player').classList.add('hidden')
+    currentAudio.pause()
+    currentAudio = null
+    currentSong = null
   }
 }
