@@ -1,0 +1,88 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.infobox {
+  margin: 2rem auto;
+  width: 80%;
+  display: block;
+  position: relative;
+  margin: 10rem auto 1rem auto;
+  align-content: center;
+}
+
+.infobox p {
+  margin: 0;
+  text-align: center;
+  padding: 2rem 0px 1rem 0px;
+  border-bottom: 1px solid rgba(0,0,0, .3);
+  margin-bottom: 3.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+
+}
+
+.node-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.node-box {
+  width: calc(50% - 32px);
+  margin-bottom: 32px;
+  display: inline-table;
+  background-color: #f8f7f3;
+  padding: 1em 2em 5px 2em;
+  box-shadow: -0.01rem 0.1rem 10px #ddd;
+  border-radius: .2rem;
+  font-size: 1.5rem;
+}
+
+.node-box:nth-child(2n) {
+  margin-left: 16px;
+}
+
+.node-box:nth-child(2n + 1) {
+  margin-right: 16px;
+}
+
+.node-box table {
+  width: 100%;
+  padding-top: 0.8em;
+}
+
+.titel {
+  margin: 0;
+  margin-left: 3px;
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+}
+
+.node-box td {
+  padding: 4px 0px;
+}
+
+.node-box table td:first-child {
+
+}
+
+.node-pdf a {
+  width: 100%;
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0;
+  margin: 4em 0 2px 0;
+}
+
+.node-pdf a:hover {
+  text-decoration: underline;
+}
+
