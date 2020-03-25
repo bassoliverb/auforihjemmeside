@@ -31,6 +31,16 @@
   margin: 0;
 }
 
+.player .song-album {
+  width: 4rem;
+  margin-right: 1.6rem;
+  border-radius: 3px;
+}
+
+.player .song-album.hidden {
+  display: none;
+}
+
 .player .player-button {
   flex-grow: 0;
   margin: 0;

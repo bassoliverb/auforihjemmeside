@@ -1,7 +1,8 @@
 const songs = {
   aabne_favne: {
     src: '/audio/aabne_favne.mp3',
-    title: 'Åbne Favne'
+    title: 'Åbne Favne',
+    album: '/images/overflader-album.jpg'
   }
 }
 
@@ -47,6 +48,14 @@ window.playSong = function playSong (id) {
     document.getElementById('button-pause-icon').classList.remove('hidden')
     document.getElementById('song-play-' + id).src = '/images/pause-icon.svg'
     document.getElementById('button-stop').classList.add('hidden')
+    const songAlbumEl = document.getElementById('song-album')
+    if (song.album) {
+      songAlbumEl.src = song.album
+      songAlbumEl.classList.remove('hidden')
+    } else {
+      songAlbumEl.src = ''
+      songAlbumEl.classList.add('hidden')
+    }
   })
   audio.addEventListener('timeupdate', function () {
     document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
