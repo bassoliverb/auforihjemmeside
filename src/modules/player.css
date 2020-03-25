@@ -24,6 +24,10 @@
   flex-grow: 0;
   margin: 0 1.6rem 0 0;
   font-weight: bold;
+  max-width: 25vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .player .song-time {
