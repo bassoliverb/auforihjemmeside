@@ -40,6 +40,8 @@ main {
   box-shadow: -0.01rem 0.1rem 10px #ddd;
   border-radius: .2rem;
   font-size: 1.5rem;
+  height: 28rem;
+  position: relative;
 }
 
 .node-box:nth-child(2n) {
@@ -54,6 +56,7 @@ main {
   width: 100%;
   padding-top: 0.8em;
 }
+
 
 .titel {
   margin: 0;
@@ -72,6 +75,11 @@ main {
 
 }
 
+.node-pdf {
+  position: absolute;
+  bottom: 0;
+}
+
 .node-pdf a {
   width: 100%;
   font-size: 0.7em;
@@ -81,7 +89,7 @@ main {
   color: black;
   display: block;
   padding: 0;
-  margin: 4em 0 2px 0;
+  /*margin: 4em 0 2px 0;*/
 }
 
 .node-pdf a:hover {
