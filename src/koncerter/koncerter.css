@@ -10,25 +10,22 @@
 	padding: 0 2rem;
 }
 
-.koncertoversigt table {
+.koncertoversigt {
 	border-collapse: collapse;
-	border: 1;
 }
 
 tr {
 	height: 12rem;
 	font-size: 1.5rem;
+	border-top: 1px solid black;
+}
+
+tr:last-child {
+	border-bottom: 1px solid black;
 }
 
 td {
 	width: 25%;
-	border-top: solid;
-	border-width: 1px 0;
-}
-
-td:last-child {
-	border-bottom: solid;
-	border-width: 1px 0;
 }
 
 .dato {
