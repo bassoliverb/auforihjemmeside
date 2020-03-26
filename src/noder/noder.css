@@ -53,6 +53,7 @@ main {
 }
 
 .node-box table {
+  table-layout: auto;
   width: 100%;
   padding-top: 0.8em;
 }
@@ -78,6 +79,8 @@ main {
 .node-pdf {
   position: absolute;
   bottom: 0;
+  left: 40%;
+  right: 40%;
 }
 
 .node-pdf a {
