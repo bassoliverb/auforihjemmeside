@@ -58,6 +58,9 @@ main {
   padding-top: 0.8em;
 }
 
+.node-box table tr > td:first-child {
+  width: 30%;
+}
 
 .titel {
   margin: 0;

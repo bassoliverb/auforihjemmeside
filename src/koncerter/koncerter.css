@@ -1,8 +1,70 @@
-.concerts {
+/*.concerts {
   width: 100%;
   margin-top: 10rem;
   font-size: 2rem;
+}*/
+
+.koncertoversigt{
+	margin: 5rem auto;
+	width: 1000px;
+	padding: 0 2rem;
 }
+
+.koncertoversigt table {
+	border-collapse: collapse;
+	border: 1;
+}
+
+tr {
+	height: 12rem;
+	font-size: 1.5rem;
+}
+
+td {
+	width: 25%;
+	border-top: solid;
+	border-width: 1px 0;
+}
+
+td:last-child {
+	border-bottom: solid;
+	border-width: 1px 0;
+}
+
+.dato {
+	background-color: #ffd500;
+	border-radius: 10px;
+	height: 8rem;
+	width: 13rem;
+	display: grid;
+	font-size: 2rem;
+	margin-left: 2rem;
+}
+
+.oeverst {
+	margin: 0 auto;
+	align-self: end;
+}
+
+.nederst {
+	margin: 0 auto; 
+}
+
+
+.mereinfo a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 0.1rem;
+	font-size: 1.2rem;
+	width: 80%;
+	margin-left: 10%; 
+	text-align: center;
+	border: 2rem;
+	border: 2px solid black;
+	padding: 1.5rem 0;
+}
+
 
 main {
   padding-top: 8rem;
