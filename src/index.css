@@ -12,3 +12,14 @@ main > .logo {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+body {
+  background-image: url(/images/home_bg.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+nav a {
+  color: white !important;
+}
