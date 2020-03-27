@@ -6,12 +6,12 @@
 
 .koncertoversigt{
 	margin: 5rem auto;
-	width: 1000px;
-	padding: 0 2rem;
+	width: 850px;
 }
 
 .koncertoversigt {
 	border-collapse: collapse;
+	border-spacing: 0 0;
 }
 
 tr {
@@ -26,15 +26,29 @@ tr:last-child {
 
 td {
 	width: 25%;
+	/*text-align: center;*/
+}
+
+/*tr>td:first-child{
+	width: 20%;
+}*/
+
+tr>td:nth-child(2) {
+	text-align: center;
+}
+
+tr>td:nth-child(3) {
+	text-align: center;
+	/*width: 30%;*/
 }
 
 .dato {
-	background-color: #ffd500;
+	background-color: #ffe478;
 	border-radius: 10px;
-	height: 8rem;
-	width: 13rem;
+	height: 7rem;
+	width: 10rem;
 	display: grid;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	margin-left: 2rem;
 }
 
@@ -53,22 +67,76 @@ td {
 	text-decoration: none;
 	color: black;
 	letter-spacing: 0.1rem;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	width: 80%;
 	margin-left: 10%; 
 	text-align: center;
 	border: 2rem;
 	border: 2px solid black;
 	padding: 1.5rem 0;
+	border-radius: 1px;
 }
 
+.mereinfo a:hover{
+	border: 1px solid black;
+	box-shadow: -1px 9px 36px -20px rgba(0,0,0,0.45)
+
+}
 
 main {
   padding-top: 8rem;
 }
 
-@media screen and (max-width: 500px) {
-  .concerts {
-    margin-top: 2rem;
+@media screen and (max-width: 900px) {
+  .koncertoversigt {
+    max-width: 600px;
   }
+  .dato{
+  	font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .koncertoversigt {
+    max-width: 400px;
+  }
+  .dato {
+  	width: 7rem;
+  	font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .koncertoversigt {
+    max-width: 400px;
+  }
+  .dato {
+  	width: 7rem;
+  	font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .koncertoversigt {
+    max-width: 270px;
+  }
+
+  tr {
+  	font-size: 1.2rem;
+  	height: 10rem;
+  }
+.mereinfo a{
+	width: 100%;
+	padding: 0.8rem 0;
+	margin-left: 0; 
+}
+  .dato {
+  	width: 5rem;
+  	font-size: 1.2rem;
+  	margin-left: 0;
+  	height: 5.5rem;
+  }
+  tr>td:nth-child(2) {
+	text-align: left;
+}
 }
