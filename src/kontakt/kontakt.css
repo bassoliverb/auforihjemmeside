@@ -81,3 +81,12 @@ main {
     opacity: 1;
   }
 }
+
+h2{
+  font-weight: normal;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-right: 2rem;
+}
+

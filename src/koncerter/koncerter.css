@@ -4,19 +4,109 @@
   font-size: 2rem;
 }*/
 
-.koncertoversigt{
-	margin: 5rem auto;
-	width: 850px;
+main {
+  padding-top: 8rem;
+  /*background-image: url(/images/sortbaggrund.jpg);: 
+  z-index:-10;*/
+  
 }
 
-.koncertoversigt {
+body {
+	background-image: url(/images/sortbaggrund.jpg);
+	background-size: contain;
+}
+
+nav a {
+	color:white ! important;
+}
+
+.art-container{
+	width: 950px;
+	margin: 0 auto;
+}
+
+.sensommertur {
+	position: absolute;
+	display: grid;
+	grid-template-rows: 2fr 4fr 2fr;
+	grid-template-columns: 2fr 6fr 2fr;
+	margin-top:-5rem; 
+	height: 31rem;
+	width: 950px;
+}
+
+.sensommertur > div {
+	z-index: 1;
+}
+
+.sol1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/Blomst1.png);
+	background-size: contain;
+	background-repeat: no-repeat; 
+	background-position: right;
+}
+
+.sol2 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/Blomst2.png);
+	background-size: contain;
+	background-repeat: no-repeat; 
+	background-position: left;
+}
+
+.auforilogo {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/turlogo.png);
+	background-size: contain;
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+.tourbadge {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-image: url(/images/Sensommertur.png);
+	background-size: contain;
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+
+
+
+.koncert-container{
+	padding: 2rem;
+	background-color: rgba(69, 69, 69, .4);
+	width: 900px;
+	margin: 32rem auto 0 auto;
+	border-radius: 5px;
+}
+
+.koncerttabel{
+	margin: 0 auto;
+	width: 850px;
+	z-index: 1;
+	/*background-color: orange;*/
 	border-collapse: collapse;
 	border-spacing: 0 0;
 }
 
+
 tr {
 	height: 12rem;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	border-top: 1px solid black;
 }
 
@@ -26,6 +116,8 @@ tr:last-child {
 
 td {
 	width: 25%;
+	z-index: 10;
+	color: white;
 	/*text-align: center;*/
 }
 
@@ -50,6 +142,8 @@ tr>td:nth-child(3) {
 	display: grid;
 	font-size: 1.7rem;
 	margin-left: 2rem;
+	z-index: 10;
+	color: black;
 }
 
 .oeverst {
@@ -65,59 +159,107 @@ tr>td:nth-child(3) {
 .mereinfo a{
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: white;
 	letter-spacing: 0.1rem;
 	font-size: 1.3rem;
 	width: 80%;
 	margin-left: 10%; 
 	text-align: center;
 	border: 2rem;
-	border: 2px solid black;
+	border: 2px solid white;
 	padding: 1.5rem 0;
 	border-radius: 1px;
 }
 
 .mereinfo a:hover{
-	border: 1px solid black;
-	box-shadow: -1px 9px 36px -20px rgba(0,0,0,0.45)
+	border: 2px solid rgba(255, 255, 255, .3 );
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: -1px 9px 36px -20px rgba(0,0,0,0.45);
+	color:black;
 
 }
 
-main {
-  padding-top: 8rem;
+.mereinfo a:active {
+	border: 1px;
 }
 
-@media screen and (max-width: 900px) {
-  .koncertoversigt {
+/*///////////////////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 950px) {
+  .art-container, .sensommertur{
+  	width: 700px;
+  }
+
+  .koncert-container{
+  	max-width: 650px;
+  }
+
+  .koncerttabel {
     max-width: 600px;
   }
   .dato{
   	font-size: 1.7rem;
   }
+  tr {
+  	font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 650px) {
-  .koncertoversigt {
+@media screen and (max-width: 700px) {
+  .art-container, .sensommertur{
+  	width: 400px;
+  }
+
+  .koncert-container{
+  	max-width: 450px;
+  }
+
+  .koncerttabel {
     max-width: 400px;
   }
   .dato {
   	width: 7rem;
   	font-size: 1.5rem;
   }
+  tr {
+  	font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 650px) {
-  .koncertoversigt {
+@media screen and (max-width: 450px) {
+
+  .art-container, .sensommertur{
+  	width: 400px;
+  }
+  
+  .koncert-container{
+  	max-width: 450px;
+  }
+
+  .koncerttabel {
     max-width: 400px;
   }
   .dato {
   	width: 7rem;
   	font-size: 1.5rem;
   }
+  tr {
+  	font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 410px) {
-  .koncertoversigt {
+@media screen and (max-width: 450px) {
+
+  .art-container, .sensommertur{
+  	width: 300px;
+  }
+
+  .koncert-container{
+  	max-width: 300px;
+  }
+
+  .koncerttabel {
     max-width: 270px;
   }
 
