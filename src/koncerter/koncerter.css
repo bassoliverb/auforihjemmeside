@@ -211,8 +211,13 @@ tr>td:nth-child(3) {
   	width: 400px;
   }
 
+  .sensommertur{
+  	margin-top: -10rem;
+}
+
   .koncert-container{
   	max-width: 450px;
+  	margin-top: 25rem;
   }
 
   .koncerttabel {
@@ -227,36 +232,20 @@ tr>td:nth-child(3) {
   }
 }
 
-@media screen and (max-width: 450px) {
-
-  .art-container, .sensommertur{
-  	width: 400px;
-  }
-  
-  .koncert-container{
-  	max-width: 450px;
-  }
-
-  .koncerttabel {
-    max-width: 400px;
-  }
-  .dato {
-  	width: 7rem;
-  	font-size: 1.5rem;
-  }
-  tr {
-  	font-size: 1.5rem;
-  }
-}
 
 @media screen and (max-width: 450px) {
-
+	
   .art-container, .sensommertur{
   	width: 300px;
   }
 
+  .sensommertur {
+  	margin-top: -10rem;
+  }
+
   .koncert-container{
   	max-width: 300px;
+  	margin-top: 25rem;
   }
 
   .koncerttabel {
