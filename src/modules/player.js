@@ -1,4 +1,59 @@
 const songs = {
+  blaa_maerker: {
+    src: '/audio/blaa_maerker.mp3',
+    title: 'Blå Mærker',
+    album: '/images/blaa_maerker.jpg'
+  }
+  det_tomme_rum: {
+    src: '/audio/det_tomme_rum.mp3',
+    title: 'Det Tomme Rum',
+    album: '/images/overflader-album.jpg'
+  }
+  doed_over_tid: {
+    src: '/audio/doed_over_tid.mp3',
+    title: 'Død Over Tid',
+    album: '/images/overflader-album.jpg'
+  }
+  hjemloes: {
+    src: '/audio/hjemloes.mp3',
+    title: 'Hjemløs',
+    album: '/images/runddans.jpg'
+  }
+  kaffekopper: {
+    src: '/audio/kaffekopper.mp3',
+    title: 'Kaffekopper',
+    album: '/images/runddans.jpg'
+  }
+  luft: {
+    src: '/audio/luft.mp3',
+    title: 'Luft',
+    album: '/images/runddans.jpg'
+  }
+  overflader: {
+    src: '/audio/overflader.mp3',
+    title: 'Overflader',
+    album: '/images/overflader-album.jpg'
+  }
+  runddans: {
+    src: '/audio/runddans.mp3',
+    title: 'Runddans',
+    album: '/images/runddans.jpg'
+  }
+  roed: {
+    src: '/audio/roed.mp3',
+    title: 'Rød',
+    album: '/images/overflader-album.jpg'
+  }
+  stjernetraade: {
+    src: '/audio/stjernetraade.mp3',
+    title: 'Stjernetråde',
+    album: '/images/stjernetraade.jpg'
+  }
+  traette_voksne: {
+    src: '/audio/traette_voksne.mp3',
+    title: 'Trætte Voksne',
+    album: '/images/runddans.jpg'
+  }
   aabne_favne: {
     src: '/audio/aabne_favne.mp3',
     title: 'Åbne Favne',
