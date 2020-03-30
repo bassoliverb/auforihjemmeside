@@ -57,7 +57,7 @@ p {
 }
 
 .text-track.show .chord-container {
-  height: 4.4rem;
+  height: 4.8rem;
 }
 
 .text-track.show .chord,
@@ -106,7 +106,7 @@ p {
 
 .chord {
   padding: 0 0.5rem;
-  line-height: 2.2rem;
+  line-height: 2rem;
   background-color: #ddd;
   box-shadow: 0px 0px 10px 0px #ddd;
   position: absolute;
@@ -117,6 +117,13 @@ p {
   white-space: nowrap;
   transform: scale3d(1, 0, 1);
   transform-origin: top;
+  padding-top: 0.3em;
+}
+
+sup{
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
 
 .sharp::after {
@@ -143,6 +150,10 @@ p {
 .chord-track > .chord {
   position: static;
   margin-right: 0.5rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
