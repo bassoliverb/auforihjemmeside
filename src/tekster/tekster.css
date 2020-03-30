@@ -74,6 +74,14 @@ p {
   transition: all .2s ease-out;
 }
 
+/*p .chord-container {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 1rem;
+  transition: all .2s ease-out;
+}*/
+
 .chord {
   padding: 0 0.5rem;
   line-height: 2.2rem;
