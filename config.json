@@ -1,7 +1,6 @@
 {
   "ignoreFileNames": [
-    "**/CNAME",
-    "**/audio/*"
+    "**/CNAME"
   ],
   "plugins": [
     "plugin-translation",
