@@ -4,6 +4,7 @@
 <head>
   <title>AUFORI: Tekster</title>
   <link rel="stylesheet" type="text/css" href="/tekster/tekster.css">
+  <script type="text/javascript" src="/tekster/tekster.js"></script>
   <module>modules/metatags.html</module>
   <meta property="og:description" content="Tekster">
   <meta name="description" content="Tekster">
@@ -22,12 +23,14 @@
         <button class="song-begin-play" onclick="playSong('blaa_maerker')">
           <img src="/images/play-icon.svg" id="song-play-blaa_maerker">
         </button>
+        <button class="toggle-chords" onclick="toggleChords(this)">
+          <img src="/images/chords.svg">
+        </button>
         <p>
           Helle f<span class="chord-container">o<span class="chord">A</span></span>r at vise dig<br>
           Enden af <span class="chord-container">e<span class="chord">G</span></span>n motorvej<br>
           Her går vejen ud i to<br>
-          Vandretur med rustne sk<span class="chord-container">o<span class="chord-track"><span
-                class="chord">G</span><span class="chord">F#</span><span class="chord">F</span></span></span><br>
+          Vandretur med rustne sk<span class="chord-container">o<span class="chord-track"><span class="chord">G</span><span class="chord">F#</span><span class="chord">F</span></span></span><br>
         </p>
         <p>
           Vil du se min vabel-hæl?<br>
@@ -60,8 +63,6 @@
           Over åen til dit land<br>
         </p>
       </div>
-
-
 
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
@@ -103,9 +104,7 @@
           Jeg famler rundt i mørkeblå, efter ord og mund<br>
           Så, tag mig ned og tag mig væk, i det tomme rum<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
@@ -231,9 +230,7 @@
           Og alt det du sagde vi sku’<br>
           Det er nu så ensomt<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
@@ -281,9 +278,7 @@
           Vi falder fra hinanden<br>
           Vi falder, vi falder<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
@@ -319,8 +314,6 @@
         </p>
       </div>
 
-
-
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
         <h1>Overflader</h1>
@@ -353,9 +346,7 @@
           Lysstriberne er ikke de samme<br>
           Jeg går rundt på mine overflader<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
@@ -408,9 +399,7 @@
           I nat blir’ vi ikke bange<br>
           Men kigger op og smiler<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
@@ -462,9 +451,7 @@
           Jeg lukker mine øjne<br>
           Efterårets duft<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/stjernetraade.jpg"></div>
       <div class="text-track">
@@ -514,9 +501,7 @@
           Vil aldrig ha’ at du går<br>
           Vil altid ha’ lige nu<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
@@ -554,9 +539,7 @@
           Gadelygterne der bøjer sig<br>
           Som trætte voksne der har dummet sig<br>
         </p>
-
       </div>
-
 
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
@@ -601,7 +584,6 @@
           Jeg tager dig i min åbne favn<br>
         </p>
       </div>
-
     </div>
   </main>
   <module>modules/footer.html</module>
