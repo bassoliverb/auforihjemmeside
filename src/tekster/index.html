@@ -18,10 +18,10 @@
 <body>
   <module>modules/navigation.html</module>
   <main>
-    <div class="column">
+    <div class="column"> <!-- --BLÅ MÆRKER -- BLÅ MÆRKER -- BLÅ MÆRKER-- -->
       <div class="img-track"><img src="/images/blaa-maerker.jpg"></div>
       <div class="text-track">
-        <h1>Blå Mærker</h1> <!-- BLÅ MÆRKER-->
+        <h1>Blå Mærker</h1>
         <button class="play-song-btn" onclick="playSong(this, '/audio/blaa_maerker.mp3')">
           <img src="/images/play-icon.svg">
         </button>
@@ -70,54 +70,57 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --DET TOMME RUM -- DET TOMME RUM -- DET TOMME RUM-- -->
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
-        <h1>Det tomme rum</h1>
+        <h1>Det Tomme Rum</h1>
         <button class="play-song-btn" onclick="playSong(this, '/audio/det_tomme_rum.mp3')">
           <img src="/images/play-icon.svg">
         </button>
+        <button class="toggle-chords" onclick="toggleChords(this)">
+          <img src="/images/chords.svg">
+        </button>
         <p>
-          Jeg under din uendelige, din uforklarlighed<br>
-          Tænker uden semantik, uden liv og mål<br>
-          Fjern er euforiens tanke, fjern er unikum<br>
+          J<span class="chord-container">e<span class="chord">Em11</span></span>g under din uendelige, d<span class="chord-container">i<span class="chord">Fmaj<span class="sharp"></span>11</span></span>n uforklarlighed<br>
+          T<span class="chord-container">æ<span class="chord">Em11</span></span>nker uden semantik, u<span class="chord-container">d<span class="chord">Fmaj<span class="sharp"></span>11</span></span>en liv og mål<br>
+          F<span class="chord-container">j<span class="chord">Em11</span></span>ern er euforiens tanke, f<span class="chord-container">j<span class="chord">Fmaj<span class="sharp"></span>11</span></span>ern er unikum<br>
         </p>
         <p>
           Men jeg<br>
-          Undrer, og<br>
-          Lystrer, og<br>
-          Prøver, og<br>
-          tysner<br>
+          U<span class="chord-container">n<span class="chord">E/f<span class="sharp"></span></span></span>drer, og<br>
+          L<span class="chord-container">y<span class="chord">G/a</span></span>strer, og<br>
+          P<span class="chord-container">r<span class="chord">E/f<span class="sharp"></span></span></span>øver, og<br>
+          t<span class="chord-container">y<span class="chord">G/a</span></span>sner<br>
         </p>
         <p>
-          Hvor er lyset, jeg falder nu<br>
-          Løfter jeg lovede, jeg ikke kunne<br>
-          Jeg famler rundt i mørkeblå, efter ord og mund<br>
-          Så, tag mig ned og tag mig væk, i det tomme rum<br>
+          H<span class="chord-container">v<span class="chord">G</span></span>or er l<span class="chord-container">y<span class="chord">E<span class="flat"></span>maj</span></span>set, jeg f<span class="chord-container">a<span class="chord">Csus7</span></span>lder nu&nbsp; &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          L<span class="chord-container">ø<span class="chord">G</span></span>fter jeg l<span class="chord-container">o<span class="chord">E<span class="flat"></span>maj</span></span>vede, jeg i<span class="chord-container">k<span class="chord">Csus7</span></span>ke kunne &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          Jeg f<span class="chord-container">a<span class="chord">G</span></span>mler rundt i m<span class="chord-container">ø<span class="chord">E<span class="flat"></span>maj</span></span>rkeblå, efter o<span class="chord-container">r<span class="chord">Csus7</span></span>d og mund &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          Så, t<span class="chord-container">a<span class="chord">G</span></span>g mig ned og t<span class="chord-container">a<span class="chord">E<span class="flat"></span>maj</span></span>g mig væk, i det t<span class="chord-container">o<span class="chord">Csus7</span></span>mme rum&nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
         </p>
         <p>
-          Jeg drømmer kun om møbler, og gamle knuste tallerkner<br>
-          Tapeter der oplyser mine, indre depressioner<br>
+          J<span class="chord-container">e<span class="chord">Em11</span></span>g drømmer kun om møbler, og <span class="chord-container">g<span class="chord">Fmaj<span class="sharp"></span>11</span></span>amle knuste tallerkner<br>
+          T<span class="chord-container">a<span class="chord">Em11</span></span>peter der oplyser <span class="chord-container">m<span class="chord">Fmaj<span class="sharp"></span>11</span></span>ine indre depressioner<br>
         </p>
         <p>
-          Drømmer, om<br>
-          møbler<br>
-          Prøver, og<br>
-          tysner<br>
+          Jeg <span class="chord-container">d<span class="chord">E/f<span class="sharp"></span></span></span>rømmer, om<br>
+          m<span class="chord-container">ø<span class="chord">G/a</span></span>bler, og<br>
+          P<span class="chord-container">r<span class="chord">E/f<span class="sharp"></span></span></span>øver, og<br>
+          t<span class="chord-container">y<span class="chord">G/a</span></span>sner<br>
         </p>
         <p>
-          Hvor er lyset, jeg falder nu<br>
-          Løfter jeg lovede, jeg ikke kunne<br>
-          Jeg famler rundt i mørkeblå, efter ord og mund<br>
-          Så, tag mig ned og tag mig væk, i det tomme rum<br>
+          H<span class="chord-container">v<span class="chord">G</span></span>or er l<span class="chord-container">y<span class="chord">E<span class="flat"></span>maj</span></span>set, jeg f<span class="chord-container">a<span class="chord">Csus7</span></span>lder nu&nbsp; &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          L<span class="chord-container">ø<span class="chord">G</span></span>fter jeg l<span class="chord-container">o<span class="chord">E<span class="flat"></span>maj</span></span>vede, jeg i<span class="chord-container">k<span class="chord">Csus7</span></span>ke kunne &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          Jeg f<span class="chord-container">a<span class="chord">G</span></span>mler rundt i m<span class="chord-container">ø<span class="chord">E<span class="flat"></span>maj</span></span>rkeblå, efter o<span class="chord-container">r<span class="chord">Csus7</span></span>d og mund &nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
+          Så, t<span class="chord-container">a<span class="chord">G</span></span>g mig ned og t<span class="chord-container">a<span class="chord">E<span class="flat"></span>maj</span></span>g mig væk, i det t<span class="chord-container">o<span class="chord">Csus7</span></span>mme rum&nbsp; &nbsp;<span class="chord-container">&nbsp;<span class="chord">Csus</span></span><br>
         </p>
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --DØD OVER TID -- DØD OVER TID -- DØD OVER TID-- -->
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
-        <h1>Død over tid</h1>
+        <h1>Død Over Tid</h1>
         <button class="play-song-btn" onclick="playSong(this, '/audio/doed_over_tid.mp3')">
           <img src="/images/play-icon.svg">
         </button>
@@ -172,7 +175,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --HJEMLØS -- HJEMLØS --  HJEMLØS-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Hjemløs</h1>
@@ -244,7 +247,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --KAFFEKOPPER -- KAFFEKOPPER -- KAFFEKOPPER-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Kaffekopper</h1>
@@ -294,7 +297,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --LUFT -- LUFT -- LUFT -- LUFT-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Luft</h1>
@@ -330,7 +333,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --OVERFLADER -- OVERFLADER -- OVERFLADER-- -->
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
         <h1>Overflader</h1>
@@ -366,7 +369,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --RUNDDANS -- RUNDDANS -- RUNDDANS-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Runddans</h1>
@@ -425,7 +428,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --RØD -- RØD -- RØD -- RØD -- RØD-- -->
       <div class="img-track"><img src="/images/overflader-album.jpg"></div>
       <div class="text-track">
         <h1>Rød</h1>
@@ -479,7 +482,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --STJERNETRÅDE -- STJERNETRÅDE -- STJERNETRÅDE-- -->
       <div class="img-track"><img src="/images/stjernetraade.jpg"></div>
       <div class="text-track">
         <h1>Stjernetråde</h1>
@@ -531,7 +534,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --TRÆTTE VOKSNE -- TRÆTTE VOKSNE -- TRÆTTE VOKSNE-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Trætte Voksne</h1>
@@ -571,7 +574,7 @@
       </div>
     </div>
 
-    <div class="column">
+    <div class="column"> <!-- --ÅBNE FAVNE -- ÅBNE FAVNE -- ÅBNE FAVNE-- -->
       <div class="img-track"><img src="/images/runddans.jpg"></div>
       <div class="text-track">
         <h1>Åbne Favne</h1>
