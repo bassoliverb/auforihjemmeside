@@ -12,7 +12,7 @@ main {
 
 body {
 	background-image: url(/images/sortbaggrund.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 
 nav:not(.open) a {
