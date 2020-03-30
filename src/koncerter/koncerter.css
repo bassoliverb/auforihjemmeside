@@ -42,6 +42,38 @@ nav .nav-toggle {
 	z-index: 1;
 }
 
+@keyframes spin {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(10deg);
+	}
+
+	75% {
+		transform: rotateZ(-10deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(0, 0, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
 .sol1 {
 	grid-column-start: 1;
 	grid-column-end: 2;
@@ -51,6 +83,8 @@ nav .nav-toggle {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
+	transform-origin: center center;
+	animation: grow 1.5s linear infinite;
 }
 
 .sol2 {
@@ -62,6 +96,8 @@ nav .nav-toggle {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left;
+	transform-origin: center center;
+	animation: grow 1.5s linear infinite;
 }
 
 .auforilogo {
@@ -73,6 +109,8 @@ nav .nav-toggle {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	transform-origin: center center;
+	animation: spin 3s linear infinite;
 }
 
 .tourbadge {
@@ -85,9 +123,6 @@ nav .nav-toggle {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
-
-
 
 .koncert-container{
 	padding: 2rem;
