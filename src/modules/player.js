@@ -33,6 +33,8 @@ window.playSong = function playSong (buttonEl, src) {
   const albumArt = currentSongEl.querySelector('.img-track > img').src
   const songTitle = currentSongEl.querySelector('h1').innerText
 
+  window.ga('send', 'event', 'Tekster', 'Afspil', songTitle)
+
   const audio = new window.Audio(src)
   currentAudio = audio
   audio.addEventListener('canplay', function () {
@@ -56,7 +58,10 @@ window.playSong = function playSong (buttonEl, src) {
   audio.addEventListener('timeupdate', function () {
     document.getElementById('song-time').innerText = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration)
   })
-  audio.addEventListener('ended', window.stopSong)
+  audio.addEventListener('ended', function () {
+    window.stopSong()
+    window.ga('send', 'event', 'Tekster', 'Færdiggør', songTitle)
+  })
 }
 
 window.toggleSong = function toggleSong () {
