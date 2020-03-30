@@ -17,7 +17,9 @@ exports.postBuild = function (files) {
               } else {
                 chordMarkup = chord
               }
-              return '<span class="chord-container">' + letter + '<span class="chord">' + chordMarkup + '</span></span>'
+              return ('<span class="chord-container">' + letter + '<span class="chord">' + chordMarkup + '</span></span>')
+                .replace(/#/g, '<span class="sharp"></span>')
+                .replace(/b/g, '<span class="flat"></span>')
             })
         })
 
