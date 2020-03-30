@@ -3,6 +3,9 @@
     "**/CNAME"
   ],
   "plugins": [
-    "plugin-translation"
+    "plugin-translation",
+    "plugin-postcss",
+    "plugin-inline-css",
+    "plugin-html-minify"
   ]
 }
