@@ -1,5 +1,8 @@
 {
   "ignoreFileNames": [
     "**/CNAME"
+  ],
+  "plugins": [
+    "plugin-translation"
   ]
 }
