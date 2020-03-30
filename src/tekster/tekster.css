@@ -66,12 +66,34 @@ p {
   transform: scale3d(1, 1, 1);
 }
 
+.text-track.show p {
+  margin: 2.5rem 0;
+}
+
+.text-track.show p.chord-container.independent {
+  margin: 2.5rem 0 3rem;
+}
+
 .chord-container {
   display: inline-flex;
   flex-direction: column-reverse;
   position: relative;
   height: 2.2rem;
   transition: all .2s ease-out;
+}
+
+.chord-container.independent {
+  display: none;
+  height: 0;
+}
+
+.chord-container.independent .chord-track {
+  position: static;
+}
+
+.text-track.show .chord-container.independent {
+  height: 2.2rem;
+  display: block;
 }
 
 /*p .chord-container {
