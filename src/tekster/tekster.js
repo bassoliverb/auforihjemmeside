@@ -4,8 +4,15 @@ window.toggleChords = function toggleChords (target) {
 
   if (el.classList.contains('show')) {
     el.classList.remove('show')
+    window.gtag('event', 'hide', {
+      event_category: 'Chords',
+      event_label: songTitle
+    })
   } else {
     el.classList.add('show')
-    window.ga('send', 'event', 'Tekster', 'Vis akkorder', songTitle)
+    window.gtag('event', 'show', {
+      event_category: 'Chords',
+      event_label: songTitle
+    })
   }
 }

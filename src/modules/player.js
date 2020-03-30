@@ -33,7 +33,10 @@ window.playSong = function playSong (buttonEl, src) {
   const albumArt = currentSongEl.querySelector('.img-track > img').src
   const songTitle = currentSongEl.querySelector('h1').innerText
 
-  window.ga('send', 'event', 'Tekster', 'Afspil', songTitle)
+  window.gtag('event', 'play', {
+    event_category: 'Audio',
+    event_label: songTitle
+  })
 
   const audio = new window.Audio(src)
   currentAudio = audio
@@ -60,7 +63,10 @@ window.playSong = function playSong (buttonEl, src) {
   })
   audio.addEventListener('ended', function () {
     window.stopSong()
-    window.ga('send', 'event', 'Tekster', 'Færdiggør', songTitle)
+    window.gtag('event', 'ended', {
+      event_category: 'Audio',
+      event_label: songTitle
+    })
   })
 }
 
