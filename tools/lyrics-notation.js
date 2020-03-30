@@ -7,8 +7,17 @@ exports.postBuild = function (files) {
       if (file.dest.match(htmlReg)) {
         const markup = file.content.toString('utf8').replace(lyricsReg, function (match, content) {
           return content
-            .replace(/(.)\[(.*?)]/gi, function (match, letter, chord) {
-              return '<span class="chord-container">' + letter + '<span class="chord">' + chord + '</span></span>'
+            .replace(/(.)\[(.*?)]/gi, function (match, letter, chordRaw) {
+              const split = chordRaw.split('^')
+              const accent = split[1]
+              const chord = split[0]
+              let chordMarkup
+              if (accent) {
+                chordMarkup = chord + '<sup>' + accent + '</sup>'
+              } else {
+                chordMarkup = chord
+              }
+              return '<span class="chord-container">' + letter + '<span class="chord">' + chordMarkup + '</span></span>'
             })
         })
 
