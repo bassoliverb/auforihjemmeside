@@ -5,6 +5,10 @@ main {
 .column {
   display: grid;
   grid-template-columns: 1fr 40rem 1fr;
+  margin: 4rem 0;
+}
+
+.column:first-child {
   margin-top: 10rem;
 }
 
