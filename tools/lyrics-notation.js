@@ -9,7 +9,10 @@ exports.postBuild = function (files) {
           return content
             .replace(/(.)\[(.*?)]/gi, function (match, letter, chordRaw) {
               const allChordsMarkup = chordRaw.split(',').map(singleChordRaw => {
-                const singleChordSplit = chordRaw.split('^')
+                const singleChordSplit = singleChordRaw
+                  .replace(/^\s+/, '')
+                  .replace(/\s+$/, '')
+                  .split('^')
                 const sup = singleChordSplit[1]
                 const chord = singleChordSplit[0]
 
