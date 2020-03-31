@@ -13,13 +13,14 @@ main > .logo {
   background-repeat: no-repeat;
 }
 
-/* body {
-  background-image: url(/images/home_bg.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
+body {
+  background-color: #121a28 !important;
 }
 
-nav a {
-  color: white !important;
-} */
+nav:not(.open) a {
+	color:white !important;
+}
+
+nav .nav-toggle {
+	filter: invert(1);
+}
