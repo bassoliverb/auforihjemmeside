@@ -119,6 +119,7 @@ p {
   transform: scale3d(1, 0, 1);
   transform-origin: top;
   padding-top: 0.3em;
+  min-height: 26px;
 }
 
 sup{
