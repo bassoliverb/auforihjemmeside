@@ -6,8 +6,6 @@
 
 main {
   padding-top: 8rem;
-  /*background-image: url(/images/sortbaggrund.jpg);:
-  z-index:-10;*/
 }
 
 body {
@@ -42,17 +40,17 @@ nav .nav-toggle {
 	z-index: 1;
 }
 
-/*@keyframes spin {
+@keyframes spin {
 	0% {
 		transform: rotateZ(0deg);
 	}
 
 	25% {
-		transform: rotateZ(10deg);
+		transform: rotateZ(5deg);
 	}
 
 	75% {
-		transform: rotateZ(-10deg);
+		transform: rotateZ(-5deg);
 	}
 
 	100% {
@@ -62,17 +60,22 @@ nav .nav-toggle {
 
 @keyframes grow {
 	0% {
-		transform: scale3d(1, 1, 1);
+		transform: rotateZ(0deg);
 	}
 
-	50% {
-		transform: scale3d(0, 0, 1);
+	25% {
+		transform: rotateZ(5deg);
+	}
+
+	75% {
+		transform: rotateZ(-5deg);
 	}
 
 	100% {
-		transform: scale3d(1, 1, 1);
+		transform: rotateZ(0deg);
 	}
-}*/
+}
+
 
 .sol1 {
 	grid-column-start: 1;
@@ -84,7 +87,9 @@ nav .nav-toggle {
 	background-repeat: no-repeat;
 	background-position: right;
 	transform-origin: center center;
-	animation: grow 1.5s linear infinite;
+	animation: grow 5s ease infinite;
+	animation-duration: alternate; 
+
 }
 
 .sol2 {
@@ -97,7 +102,7 @@ nav .nav-toggle {
 	background-repeat: no-repeat;
 	background-position: left;
 	transform-origin: center center;
-	animation: grow 1.5s linear infinite;
+	animation: spin 7s linear reverse infinite;
 }
 
 .auforilogo {
@@ -109,8 +114,6 @@ nav .nav-toggle {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	transform-origin: center center;
-	animation: spin 3s linear infinite;
 }
 
 .tourbadge {

@@ -19,10 +19,8 @@ body {
 }
 
 .infobox{
-  position: static;
   width: 80%;
   /*margin: 5rem auto 2rem;*/
-  text-align: left;
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
@@ -42,6 +40,10 @@ body {
 
 p {
   font-size: 1.7rem;
+}
+
+.infobox p {
+  font-size: 2rem;
 }
 
 .foto {

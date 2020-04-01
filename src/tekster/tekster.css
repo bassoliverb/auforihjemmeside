@@ -3,6 +3,12 @@
   src: url(/tekster/music-font.ttf);
 }
 
+body{
+    background-image: url(/images/raat_papir2.jpg);
+    background-size: 100vw;
+    background-blend-mode: 
+}
+
 main {
   padding-top: 8rem;
 }
@@ -40,7 +46,7 @@ h1 {
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
 }
 
