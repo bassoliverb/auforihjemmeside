@@ -13,10 +13,24 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120581100-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<script type="text/javascript">
+  function gtag () {
+    return null
+  }
+  console.log(window.gtag);
+  function activateAnalytics () {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag () {dataLayer.push(arguments);};
+    gtag('js', new Date());
 
-  gtag('config', 'UA-120581100-2');
+    gtag('config', 'UA-120581100-2');
+  }
+
+  window.addEventListener('load', function () {
+    if (window.localStorage.getItem('cookie-consent') === 'accepted') {
+      activateAnalytics();
+    } else if (!window.localStorage.getItem('cookie-consent')) {
+      document.getElementById('cookie-warning').classList.add('show');
+    }
+  });
 </script>

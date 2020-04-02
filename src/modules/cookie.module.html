@@ -3,10 +3,10 @@
   <script type="text/javascript" src="/modules/cookie.js"></script>
 </module:head>
 
-<div class="cookie-warning">
+<div id="cookie-warning">
   <p class="cookie-greeting">
     <translate>Hej! Må vi bruge cookies?</translate>
-    <button class="cookie-readmore" onclick="cookieReadmore(this)">
+    <button class="cookie-readmore" onclick="cookieReadmore()">
       <translate>Læs mere</translate>
     </button>
   </p>
@@ -14,10 +14,10 @@
     <translate>Her på siden vil vi gerne bruge cookies til at tracke din adfærd. Alt det data vi har tænkt os at indsamle er anonymiseret og vi sælger ikke din data videre og tjener ikke penge på den. Vi ved hverken hvad du hedder eller hvor du bor 😇. Vi bruger udelukkende dataet for at lære hvordan du navigerer rundt på siden, så vi kan gøre brugeroplevelsen bedre. Du bliver ikke tracket på nogen måde før du har klikket <i>OK</i> nedenfor.</translate>
   </p>
   <div class="cookie-buttons">
-    <button class="cookie-reject">
+    <button class="cookie-reject" onclick="rejectCookies()">
       <translate>Nej tak</translate>
     </button>
-    <button class="cookie-accept">
+    <button class="cookie-accept" onclick="acceptCookies()">
       <translate>Ok</translate>
     </button>
   </div>
