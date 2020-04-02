@@ -1,0 +1,55 @@
+nav{
+  position: relative !important;
+}
+
+body {
+  background-color: #fff4e6 !important;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 3fr;
+  height: 650px;
+  margin-top: 3rem;
+  padding: 2rem 0 0 2rem;
+  background-color: #fffaf2;
+  border-radius: 2px;
+  box-shadow: 0 0.2rem 1rem 5px #fffaf2;
+}
+
+.infobox{
+  width: 80%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 0 0 3rem 1rem;
+}
+
+.infobox2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 4rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+.infobox p {
+  font-size: 2rem;
+}
+
+.foto {
+  background-image: url(/images/om_os_billede2.jpg);
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-position: center;
+  border-radius: 2px;
+}

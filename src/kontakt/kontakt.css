@@ -5,6 +5,11 @@ main {
   align-items: center;
 }
 
+body{
+  background-image: url(/images/raat_papir3.png);
+  background-size: auto 100vh;
+}
+
 .contact {
   margin-top: 12rem;
   width: 100%;
