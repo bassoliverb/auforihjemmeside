@@ -13,3 +13,13 @@ function toggleMenu () {
 window.addEventListener('load', function () {
   document.querySelector('#nav-toggle').addEventListener('click', toggleMenu)
 })
+
+window.toggleMusicDropdown = function toggleMusicDropdown () {
+  const el = document.getElementById('nav')
+
+  if (el.classList.contains('show-dropdown')) {
+    el.classList.remove('show-dropdown')
+  } else {
+    el.classList.add('show-dropdown')
+  }
+}
