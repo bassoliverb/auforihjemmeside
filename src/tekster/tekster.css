@@ -4,9 +4,8 @@
 }
 
 body{
-    background-image: url(/images/raat_papir2.jpg);
-    background-size: 100vw;
-    background-blend-mode: 
+  background-image: url(/images/raat_papir3.png);
+  background-size: auto 100vh;
 }
 
 main {
