@@ -19,8 +19,8 @@ body {
   background-position: center;
 }
 
-nav:not(.open) li, a {
-	color:white !important;
+nav:not(.open) a {
+	color:white ! important;
 }
 
 nav .nav-toggle {
