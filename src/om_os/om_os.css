@@ -3,27 +3,30 @@ nav{
 }
 
 body {
-  background-color: #fff4e6 !important;
+  background-color: #0b111d !important;
 }
 
 .container{
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 3fr;
+  grid-row-gap: 2rem;
   height: 650px;
   margin-top: 3rem;
   padding: 2rem 0 0 2rem;
-  background-color: #fffaf2;
+  background-color: #051226;
   border-radius: 2px;
-  box-shadow: 0 0.2rem 1rem 5px #fffaf2;
+  /*box-shadow: 0 0.2rem 1rem 5px #fffaf2;*/
 }
 
 .infobox{
+  box-sizing: border-box;
   width: 80%;
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  padding: 0 0 3rem 1rem;
+  color: #d4d4d4
+  /*padding: 0 0 3rem 1rem;*/
 }
 
 .infobox2{
@@ -35,6 +38,7 @@ body {
   align-items: center;
   text-align: center;
   padding-right: 4rem;
+  color: #d4d4d4;
 }
 
 p {
@@ -52,4 +56,12 @@ p {
   grid-column-end: 3;
   background-position: center;
   border-radius: 2px;
+}
+
+nav:not(.open) a {
+  color: #e4e4e4 ! important;
+}
+
+nav .nav-toggle {
+  filter: invert(1);
 }

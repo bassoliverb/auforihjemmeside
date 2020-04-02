@@ -1,0 +1,76 @@
+main {
+	padding-top: 8rem;
+}
+
+.diskografi{
+	margin: 10rem auto 0;
+	width: 900px;
+	height: 900px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3.5rem;
+}
+
+.runddans{
+	background-image: url(/images/runddans.jpg);
+}
+
+.overflader{
+	background-image: url(/images/overflader-album.jpg);
+}
+
+.stjernetraade{
+	background-image: url(/images/stjernetraade.jpg);
+}
+
+.blaamaerker{
+	background-image: url(/images/blaa-maerker.jpg);
+}
+
+
+.runddans, .overflader, .stjernetraade, .blaamaerker {
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.songlist{
+	z-index: 2;
+	width: 60%;
+	height: 100%;
+	background-color: rgba(255,255,255, 0.7);
+	position: absolute;
+	right: 0px;
+	padding-left: 1rem;
+	transition: transform .3s;
+	transition-delay: .02s 1s;
+	transform: translateX(100%);
+}
+
+.runddans:hover .songlist,
+.overflader:hover .songlist,
+.stjernetraade:hover .songlist,
+.blaamaerker:hover .songlist{
+	transform: translateX(0%);
+}
+
+h1 {
+	width: 50%;
+	margin: 3rem auto;
+	font-size: 3.5rem;
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: 1rem;
+	font-size: 1.5rem;
+}
+
+li {
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
