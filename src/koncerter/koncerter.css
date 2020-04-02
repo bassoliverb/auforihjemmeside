@@ -133,6 +133,7 @@ nav .nav-toggle {
 	width: 900px;
 	margin: 32rem auto 0 auto;
 	border-radius: 5px;
+	box-shadow: 0 2px 20px 0px #1b1a1a;
 }
 
 .koncerttabel{
@@ -159,6 +160,7 @@ td {
 	width: 25%;
 	z-index: 10;
 	color: white;
+	text-shadow: 1px 1px 8px black;
 	/*text-align: center;*/
 }
 
@@ -185,6 +187,8 @@ tr>td:nth-child(3) {
 	margin-left: 2rem;
 	z-index: 10;
 	color: black;
+	box-shadow: -1px 2px 9px 2px #1d1c1c;
+	text-shadow: none !important;
 }
 
 .oeverst {
@@ -210,6 +214,7 @@ tr>td:nth-child(3) {
 	border: 2px solid white;
 	padding: 1.5rem 0;
 	border-radius: 1px;
+	text-shadow: none;
 }
 
 .mereinfo a:hover{
