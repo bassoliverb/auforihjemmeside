@@ -4,12 +4,14 @@ window.toggleChords = function toggleChords (target) {
 
   if (el.classList.contains('show')) {
     el.classList.remove('show')
+    el.classList.add('hide')
     window.gtag('event', 'hide', {
       event_category: 'Chords',
       event_label: songTitle
     })
   } else {
     el.classList.add('show')
+    el.classList.remove('hide')
     window.gtag('event', 'show', {
       event_category: 'Chords',
       event_label: songTitle

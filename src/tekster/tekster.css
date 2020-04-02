@@ -61,19 +61,23 @@ p {
   height: 1.8rem;
 }
 
-@keyframes grow-container {
+@keyframes display-chord {
   0% {
-    height: 2.2rem;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
   }
 
   100% {
-    height: 4.8rem;
+    opacity: 1;
   }
 }
 
 .text-track.show .chord-container {
   height: 4.8rem;
-  animation: grow-container 0.2s ease-out;
+  margin-top: 0.4rem;
 }
 
 .text-track.show p {
@@ -84,20 +88,9 @@ p {
   margin: 2.5rem 0 3rem;
 }
 
-.chord-container {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  position: relative;
-  height: 2.2rem;
-}
-
-.chord-container.independent {
-  display: none;
-  height: 0;
-}
-
-.chord-container.independent .chord-track {
-  position: static;
+.text-track.show .chord {
+  display: inline;
+  animation: display-chord 0.4s ease-out;
 }
 
 .text-track.show .chord-container.independent {
@@ -105,13 +98,10 @@ p {
   display: block;
 }
 
-/*p .chord-container {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  position: relative;
-  height: 1rem;
-  transition: all .2s ease-out;
-}*/
+.text-track.hide .chord-container {
+  animation: shrink-container 0.2s ease-out;
+}
+
 
 .chord {
   user-select: none;
@@ -124,13 +114,42 @@ p {
   left: -50%;
   white-space: nowrap;
   padding-top: 0.3em;
-  min-height: 26px;
+  display: none;
 }
 
-sup{
+.chord-container {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 2.2rem;
+  transition: height 0.2s ease-out;
+}
+
+.chord-track {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -50%;
+}
+
+.chord-track > .chord {
+  position: static;
+  margin-right: 0.5rem;
+}
+
+.chord-container.independent {
+  display: none;
+  height: 0;
+}
+
+.chord-container.independent .chord-track {
+  position: static;
+}
+
+sup {
   vertical-align: baseline;
   position: relative;
-  top: -0.4em;
+  top: -0.3em;
 }
 
 .sharp::after {
@@ -141,26 +160,6 @@ sup{
 .flat::after {
   content: "H";
   font-family: Music;
-}
-
-.chord-track {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: -50%;
-  transition: all .2s ease-out;
-  opacity: 1;
-  transform: scale3d(1, 0, 1);
-  transform-origin: bottom;
-}
-
-.chord-track > .chord {
-  position: static;
-  margin-right: 0.5rem;
-}
-
-button {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
