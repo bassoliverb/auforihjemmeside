@@ -5,6 +5,7 @@ window.cookieReadmore = function cookieReadmore () {
 window.acceptCookies = function acceptCookies () {
   window.localStorage.setItem('cookie-consent', 'accepted')
   document.getElementById('cookie-warning').classList.remove('show')
+  window.activateAnalytics()
 }
 
 window.rejectCookies = function acceptCookies () {

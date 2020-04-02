@@ -12,18 +12,23 @@
 <meta charset="utf-8">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120581100-2"></script>
 <script type="text/javascript">
   function gtag () {
     return null
   }
-  console.log(window.gtag);
   function activateAnalytics () {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function gtag () {dataLayer.push(arguments);};
-    gtag('js', new Date());
+    const script = document.createElement('script');
+    script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-120581100-2');
+    script.setAttribute('type', 'text/javascript');
+    script.setAttribute('async', true);
+    script.addEventListener('load', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function gtag () {dataLayer.push(arguments);};
+      gtag('js', new Date());
 
-    gtag('config', 'UA-120581100-2');
+      gtag('config', 'UA-120581100-2');
+    });
+    document.head.appendChild(script);
   }
 
   window.addEventListener('load', function () {
