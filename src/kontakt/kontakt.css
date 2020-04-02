@@ -7,7 +7,7 @@ main {
 
 body{
   background-image: url(/images/raat_papir3.png);
-  background-size: 100vw;
+  background-size: auto 100vh;
 }
 
 .contact {
