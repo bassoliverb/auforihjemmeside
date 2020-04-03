@@ -7,21 +7,26 @@ body{
 	background-size: auto 100vh;
 }
 
-section {
-	/*margin-left: calc(-100vw / 2 + 100rem / 2);
-	margin-right: calc(-100vw / 2 + 100rem / 2);*/
+.wrapper{
 	width: 100vw;
 	position: relative;
 	left: 50%;
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
+}
+
+section {
+	width: 1100px;
+	margin: 0 auto;
 	margin-top: 6rem; 
 	padding: 5rem 0; 
 	/*background-color: #384035;*/
 	background: rgb(17,17,40);
 	background: linear-gradient(0deg, rgba(17,17,40,1) 0%, rgba(50,52,48,1) 100%);
 	box-shadow: inset 0px 2px 20px 5px #000000;
+	border: 15px ridge #A45100;
+	border-radius: 2px;
 }
 
 /*#384035; grønlig farve*/
@@ -129,10 +134,185 @@ h2 {
 ol {
 	list-style-type: decimal;
 	margin-left: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 li {
 	padding-left: 1rem;
 	padding-top: 1rem;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+	section{
+	width: 900px;
+	}
+
+	.diskografi {
+		width: 750px;
+		height: 750px;
+	}
+
+	h1{
+		font-size: 3rem;
+	}
+
+	ol{
+		font-size: 1.5rem; 
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+	section{
+	width: 800px;
+	}
+
+	.diskografi {
+		width: 700px;
+		height: 700px;
+	}
+
+	.title{
+		font-size: 3.5rem;
+	}
+
+	h1{
+		font-size: 2.8rem;
+	}
+
+	ol{
+		font-size: 1.3rem; 
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	section{
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 885px) {
+	section{
+	width: 600px;
+	padding-top: 4rem;
+	}
+	.diskografi {
+		width: 500px;
+		height: 500px;
+	}
+
+	.title{
+		font-size: 3rem;
+	}
+
+	h1{
+		font-size: 1.7rem;
+		margin-top: 2rem;
+	}
+
+	h2{
+		margin: 0;
+		margin-left: 1.2rem;
+		margin-top: -1.5rem;
+		font-size: .8rem;
+		font-weight: normal;
+
+	}
+
+	ol{
+		font-size: 1rem; 
+		margin-left: -1rem; 
+	}
+
+	li {
+		padding-top: 0.5rem;
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+	section{
+	width: 500px;
+	padding-top: 4rem;
+	}
+	.diskografi {
+		width: 400px;
+		height: 400px;
+		margin: 3rem auto;
+	}
+
+	.title{
+		font-size: 3rem;
+	}
+
+	h1{
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	h2{
+		margin: 0;
+		margin-left: 1.2rem;
+		margin-top: -1rem;
+		font-size: .6rem;
+		font-weight: normal;
+
+	}
+
+	ol{
+		font-size: .8rem; 
+		margin-left: -2rem;
+		margin-top: .3rem; 
+	}
+
+	li {
+		padding-top: 0.5rem;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+	section{
+	width: 350px;
+	padding-top: 4rem;
+	}
+	.diskografi {
+		width: 200px;
+		height: 902px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 0;
+	}
+
+	.title{
+		font-size: 3rem;
+		padding-bottom: .5rem;
+	}
+
+	h1{
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	h2{
+		margin: 0;
+		margin-left: 1.2rem;
+		margin-top: -1rem;
+		font-size: .6rem;
+		font-weight: normal;
+
+	}
+
+	ol{
+		font-size: .9rem; 
+		margin-left: -2rem;
+		margin-top: .3rem; 
+	}
+
+	li {
+		padding-top: 0.5rem;
+	}
+
 }
