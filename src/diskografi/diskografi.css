@@ -3,7 +3,7 @@ main {
 }
 
 body{
-	background-image: url(/images/raat_papir_farve.png);
+	background-image: url(/images/raat_papir3.png);
 	background-size: auto 100vh;
 }
 
@@ -14,11 +14,14 @@ section {
 	position: relative;
 	left: 50%;
 	right: 50%;
-	margin-left: -50.5vw;
+	margin-left: -50vw;
+	margin-right: -50vw;
 	margin-top: 6rem; 
 	padding: 5rem 0; 
-	background-color: #384035;
-	box-shadow: inset 0px 2px 20px 2px #131212;
+	/*background-color: #384035;*/
+	background: rgb(17,17,40);
+	background: linear-gradient(0deg, rgba(17,17,40,1) 0%, rgba(50,52,48,1) 100%);
+	box-shadow: inset 0px 2px 20px 5px #000000;
 }
 
 /*#384035; grønlig farve*/
@@ -115,6 +118,14 @@ h1 {
 	white-space: nowrap;
 }
 
+h2 {
+	margin: 0;
+	margin-left: 1.2rem;
+	margin-top: -3rem;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+
 ol {
 	list-style-type: decimal;
 	margin-left: 1rem;
@@ -124,12 +135,4 @@ ol {
 li {
 	padding-left: 1rem;
 	padding-top: 1rem;
-}
-
-nav:not(.open) a {
-  color: #fff ! important;
-}
-
-nav .nav-toggle {
-  filter: invert(1);
 }
