@@ -1,0 +1,70 @@
+main {
+	padding-top: 8rem;
+}
+
+body{
+	background-image: url(/images/raat_papir3.png);
+	background-size: auto 100vh;
+}
+
+.infobox {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.hovedblomst {
+	width: 220px;
+	transform: rotate(90deg);
+	margin: -14rem auto;
+	margin-bottom: -15.5rem;
+}
+
+.infobox > div > img {
+	width: 100%;
+
+}
+
+.text {
+	width: 100%;
+	padding-top: 1rem;
+	border-top: 1px solid #bbb;
+	border-right: 1px none red;
+}
+
+.infobox > .text > p {
+	padding: 0 1rem;
+	line-height: 1.2;
+	font-size: 1.2rem;
+}
+
+.singlespace {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.doublespace {
+	margin-top: 0.5em;
+}
+
+
+.button {
+	float: right;
+	font-size: 1rem;
+	margin-right: 5rem;
+	padding: .8rem 1.8rem;
+	margin-top: -1.5rem;
+	border: 1px solid black;
+	background-color: #eff0f2;
+	user-select: none;
+}
+
+.button:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #e1e2e4;
+}
+
