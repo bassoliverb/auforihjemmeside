@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
 })
 
 window.toggleMusicDropdown = function toggleMusicDropdown () {
-  const el = document.getElementById('nav')
+  const el = document.getElementById('menu')
 
   if (el.classList.contains('show-dropdown')) {
     el.classList.remove('show-dropdown')

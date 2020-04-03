@@ -2,6 +2,7 @@ nav {
   font-size: 2.5rem;
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
+  line-height: 3rem;
   padding: 4rem 0 2rem;
   z-index: 100;
   position: absolute;
@@ -20,16 +21,19 @@ nav > ul {
   float: right;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 nav > ul > li {
   float: left;
   list-style: none;
   margin-left: 4rem;
+  transform: scaleY(1);
+  transform-origin: top;
 }
 
 nav.show-dropdown > ul > li {
-  display: none;
+  transform: scaleY(0);
 }
 
 nav a {
@@ -50,28 +54,19 @@ nav .nav-toggle {
   display: none;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-nav .dropdown-container a {
-  float: left;
-}
-
-nav .dropdown-container:hover .dropdown-menu {
-  display: inline;
-  animation: fade-in 0.5s ease-out;
-}
-
 nav .dropdown-menu {
-  display: none;
+  display: block;
   padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+
+nav.show-dropdown .dropdown-menu {
+  transform: scaleY(1);
 }
 
 nav .dropdown-menu li {
