@@ -9,14 +9,15 @@ body{
 
 .infobox {
 	position: relative;
-	width: 600px;
+	width: 650px;
 	margin: 0 auto;
+	margin-bottom: 8rem;
 }
 
 .hovedblomst {
-	width: 220px;
+	width: 250px;
 	transform: rotate(90deg);
-	margin: -14rem auto;
+	margin: -15rem auto;
 	margin-bottom: -15.5rem;
 }
 
@@ -35,7 +36,7 @@ body{
 .infobox > .text > p {
 	padding: 0 1rem;
 	line-height: 1.2;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 .singlespace {
@@ -50,7 +51,7 @@ body{
 
 .button {
 	float: right;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-right: 5rem;
 	padding: .8rem 1.8rem;
 	margin-top: -1.5rem;
@@ -68,3 +69,80 @@ body{
 	background-color: #e1e2e4;
 }
 
+
+.node-container {
+
+	margin: 5rem auto;
+	display: flex;
+	justify-content: center;
+}
+
+.node-display{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4rem;
+	width: 100%;
+}
+
+.node {
+	width: 100%;
+	background-color: #fff;
+	cursor: pointer;
+	box-shadow: 0px 2px 6px 0 #636363;;
+
+}
+
+.node img {
+	width: 100%;
+}
+
+.popup {
+	display: block;
+	z-index: 200;
+	position: fixed;
+	width: 80%;
+	max-width: 600px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 200ms ease-in-out;
+	background-color: #fff;
+	border: 1px solid black;
+}
+
+.popup.active {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+	max-width: 100%;
+}
+
+.popup button {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 3rem;
+	background:none;
+	width: 4rem;
+	height: 4rem;
+}
+
+#overlay {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.5);
+	transition: 200ms ease-in-out;
+	opacity: 0;
+}
+
+#overlay.active {
+	pointer-events: all;
+	opacity: 1;
+	z-index: 199;
+}
