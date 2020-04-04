@@ -26,15 +26,26 @@ body{
 .blomst2{
   position: absolute;
   width: 150px;
-  z-index: 1;
+  z-index: -1;
   bottom: -7rem;
   right: -19rem;
   transform: rotate(160deg) scaleX(-1);
-  margin-top: 10rem;
-  margin-left: 10rem;
 }
 
 .blomst2 img {
+  width: 100%;
+}
+
+.blomst3{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  bottom: -30rem;
+  left: -20rem;
+  transform: rotate(30deg) scaleX(-1);
+}
+
+.blomst3 img {
   width: 100%;
 }
 
@@ -128,5 +139,18 @@ h2 > a:hover {
   nav button.nav-toggle {
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
     opacity: 1;
+  }
+
+  .blomst2 {
+    right: 20%;
+    bottom: 30rem;
+    transform: rotate(145deg) scaleX(-1);
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .blomst2{
+    left: 355px;
   }
 }
