@@ -10,6 +10,34 @@ body{
   background-size: auto 100vh;
 }
 
+.blomst1{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  left: 0px;
+  margin-top: -10rem;
+  transform: rotate(-130deg);
+}
+
+.blomst1 img {
+  width: 100%;
+}
+
+.blomst2{
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+  bottom: -7rem;
+  right: -19rem;
+  transform: rotate(160deg) scaleX(-1);
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+.blomst2 img {
+  width: 100%;
+}
+
 .contact {
   margin-top: 12rem;
   width: 100%;
