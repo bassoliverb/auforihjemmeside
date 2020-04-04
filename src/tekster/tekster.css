@@ -38,6 +38,49 @@ main {
   justify-self: end;
 }
 
+.blomst, .blomsta, .blomst2, .blomst3, .blomst4, .blomst5 {
+  position: absolute;
+}
+
+.blomst img, .blomst2 img, .blomst3 img, .blomst4 img, .blomst5 img, .blomsta img{
+  width: 100%;
+}
+
+.blomst {
+  width: 200px;
+  right: 40px;
+}
+
+.blomst2 {
+  width: 170px;
+  right: 40px;
+  margin-top: 42rem;
+}
+
+.blomst3 {
+  width: 300px;
+  right: -10px;
+  margin-top: -42rem;
+}
+
+.blomst4 {
+  width: 200px;
+  right: 20px;
+  margin-top: -42rem;
+}
+
+.blomst5 {
+  width: 200px;
+  right: 20px;
+  margin-top: -25rem;
+}
+
+.blomsta {
+  width: 200px;
+  right: 40px;
+  margin-top: 50rem;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -173,6 +216,10 @@ sup {
   .column > .img-track {
     padding-bottom: 0;
   }
+
+  .column:first-child {
+  margin-top: 0;
+}
 
   .column > .img-track > img {
     position: static;
