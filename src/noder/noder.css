@@ -50,6 +50,10 @@ body{
 	margin-top: 0.5em;
 }
 
+a {
+	display: block;
+	color: black;
+}
 
 .button {
 	float: right;
