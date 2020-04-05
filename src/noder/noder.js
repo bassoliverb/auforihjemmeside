@@ -18,6 +18,10 @@ closeButtons.forEach(function (button) {
   })
 })
 
+overlay.addEventListener('click', function () {
+  closeNode(currentNode)
+})
+
 window.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     closeNode(currentNode)
