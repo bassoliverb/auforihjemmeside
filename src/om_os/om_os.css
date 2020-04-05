@@ -6,6 +6,8 @@ body {
   background-image: url(/images/about_blaa.jpg);
   background-size: cover;
   background-position: center;
+  width: 100rem;
+  margin: 0 auto;
 }
 
 .container{

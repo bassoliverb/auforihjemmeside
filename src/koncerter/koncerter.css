@@ -11,6 +11,8 @@ main {
 body {
 	background-image: url(/images/sortbaggrund.jpg);
 	background-size: cover;
+  width: 100rem;
+  margin: 0 auto;
 }
 
 nav:not(.open) a {

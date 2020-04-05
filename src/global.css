@@ -12,8 +12,6 @@ html, body {
 
 body {
   font-family: 'Source Serif Pro', serif;
-  width: 100rem;
-  margin: 0 auto;
   padding-bottom: 25rem;
   box-sizing: border-box;
   background-color: #fffffc;
