@@ -1,9 +1,8 @@
-var openButtons = document.querySelectorAll('[data-node-target]')
-var closeButtons = document.querySelectorAll('[data-close-button]')
-var overlay = document.getElementById('overlay')
+const openButtons = document.querySelectorAll('[data-node-target]')
+const closeButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-console.log(openButtons)
-console.log(closeButtons)
+let currentNode = null
 
 openButtons.forEach(function (div) {
   div.addEventListener('click', function () {
@@ -19,8 +18,17 @@ closeButtons.forEach(function (button) {
   })
 })
 
+window.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    closeNode(currentNode)
+  }
+})
+
 function openNode (node) {
   if (node == null) return
+
+  currentNode = node
+
   node.classList.add('active')
   overlay.classList.add('active')
 };
