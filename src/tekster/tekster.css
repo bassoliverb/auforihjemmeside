@@ -229,6 +229,18 @@ sup {
   }
 }
 
+
+@media screen and (max-width: 500px) {
+  .blomst img, .blomst2 img, .blomst3 img, .blomst4 img, .blomst5 img, .blomsta img{
+  display: none;}
+
+  .blomst, .blomst2, .blomst3, .blomst4, .blomst5, .blomsta {
+    display: none;
+  }
+
+}
+
+
 @media screen and (max-width: 367px) {
   .column > .img-track > img {
     width: 100px;
