@@ -38,6 +38,6 @@ button {
 
 @media screen and (max-width: 1000px) {
   body {
-    width: 100%;
+    width: 100% !important;
   }
 }
