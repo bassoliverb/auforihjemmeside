@@ -12,6 +12,14 @@ body{
   margin: 0 auto;
 }
 
+.blomster {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
 .blomst1{
   position: absolute;
   width: 150px;
