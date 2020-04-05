@@ -134,7 +134,7 @@ h2 {
 .songs > ol {
 	list-style-type: decimal;
 	margin-left: 1rem;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 }
 
 .songs > li {
@@ -182,8 +182,8 @@ h2 {
 		font-size: 2.8rem;
 	}
 
-	ol{
-		font-size: 1.3rem;
+	.songs > ol{
+		font-size: 1.5rem;
 	}
 }
 
@@ -221,8 +221,8 @@ h2 {
 
 	}
 
-	ol{
-		font-size: 1rem;
+	.songs > ol{
+		font-size: 1.1rem;
 		margin-left: -1rem;
 	}
 
@@ -261,7 +261,7 @@ h2 {
 
 	}
 
-	ol{
+	.songs > ol{
 		font-size: .8rem;
 		margin-left: -2rem;
 		margin-top: .3rem;
@@ -305,7 +305,7 @@ h2 {
 
 	}
 
-	ol{
+	.songs > ol{
 		font-size: .9rem;
 		margin-left: -2rem;
 		margin-top: .3rem;

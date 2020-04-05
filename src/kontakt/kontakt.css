@@ -10,7 +10,7 @@ body{
   background-size: auto 100vh;
   width: 100rem;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .blomst1{
@@ -43,9 +43,9 @@ body{
   position: absolute;
   width: 150px;
   z-index: -1;
-  bottom: -30rem;
+  bottom: -10rem;
   left: -20rem;
-  transform: rotate(30deg) scaleX(-1);
+  transform: rotate(80deg) scaleX(-1);
 }
 
 .blomst3 img {

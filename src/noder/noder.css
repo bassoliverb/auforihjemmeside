@@ -50,7 +50,7 @@ body{
 	margin-top: 0.5em;
 }
 
-a {
+.mail {
 	display: block;
 	color: black;
 }
@@ -151,4 +151,67 @@ a {
 	pointer-events: all;
 	opacity: 1;
 	z-index: 199;
+}
+
+@media screen and (max-width: 1100px) {
+	.node-container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hovedblomst {
+		margin: -20rem auto;
+		margin-bottom: -15.5rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.node-display{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 733px) {
+	.infobox{
+		width: 85%;
+	}
+
+	.button{
+		margin-top: 1.5rem;
+		margin-right: 0;
+		margin-left: 1rem;;
+		float: left;
+	}
+
+	.hovedblomst {
+		width: 200px;
+		margin: -20rem auto;
+		margin-bottom: -12.5rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.node-display{
+		grid-template-columns: 1fr;
+	}
+
+	.node-container{
+		width: 70%;
+	}
+
+	.hovedblomst {
+		width: 170px;
+		margin: -15rem auto;
+		margin-bottom: -10.5rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.hovedblomst {
+		width: 130px;
+		margin: -13rem auto;
+		margin-bottom: -8.5rem;
+	}
 }
