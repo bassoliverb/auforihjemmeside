@@ -1,73 +1,89 @@
-nav{
-  position: relative !important;
+main{
+  padding-top: 10rem;
 }
 
-body {
-  background-image: url(/images/about_blaa.jpg);
-  background-size: cover;
-  background-position: center;
+body{
+	background-image: url(/images/raat_papir3.png);
+	background-size: auto 100vh;
   width: 100rem;
   margin: 0 auto;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 3fr;
-  grid-row-gap: 2rem;
-  height: 650px;
-  margin-top: 3rem;
-  padding: 2rem 0 0 2rem;
-  background-image: url(/images/about_blaa.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  box-shadow: 0 0.2rem 20px 11px #080e21;
+.papir {
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  width: 87%;
+  background: rgb(255,254,239);
+  background: linear-gradient(0deg, rgba(255,254,239,1) 0%, rgba(249,248,240,1) 94%);
+  box-shadow: 0px 2px 16px 3px #d6d6d6;
+  border-radius: 2px;
 }
 
-.infobox{
-  box-sizing: border-box;
+.blomst {
+  width: 150px;
+	transform: rotate(90deg);
+	margin: -15rem auto;
+	margin-bottom: -15.5rem;
+}
+
+.blomst img {
+  width: 150px;
+}
+
+.about{
   width: 80%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  text-align: center;
-  color: #d4d4d4
-  /*padding: 0 0 3rem 1rem;*/
+  margin: 0 auto;
+  
 }
 
-.infobox2{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-right: 4rem;
-  color: #d4d4d4;
-}
+.text {
+    padding: 0 6rem;
+    padding-top: 2rem;
+    width: 100%;
+    border-top: 1px solid #bbb;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+  }
 
-p {
-  font-size: 1.7rem;
-}
+  .singlespace {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .doublespace {
+    margin-top: 1em;
+  }
 
-.infobox p {
-  font-size: 2rem;
-}
+  .image > img {
+    width: 65rem;
+    border-radius: 2px;
+    height: 35rem;
+    object-fit: cover;
+  }
 
-.foto {
-  background-image: url(/images/about_vi.png);
-  background-size: cover;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .image > img {
+    box-shadow: 0px 2px 6px 0 #636363;
+  }
 
-nav:not(.open) a {
-  color: #e4e4e4 ! important;
-}
+  .image{
+    position: relative;
+    margin: 8rem auto 2rem;
+    text-align: center;
+  }
 
-nav .nav-toggle {
-  filter: invert(1);
-}
+  .logo_icon {
+    position: absolute;
+    top: -10%;
+    margin-left: 11%;
+    text-align: left;
+  }
+
+  .logo_icon img {
+    width: 15%;
+    border-radius: 50%;
+    border: solid 4px rgb(255, 207, 15);
+    box-shadow: 0px 2px 6px 0 #2b2b2b;
+  }
