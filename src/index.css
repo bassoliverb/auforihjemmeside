@@ -14,7 +14,7 @@ main > .logo {
 }
 
 body {
-  background-image: url(images/home-background.jpg) !important;
+  background-image: url(/images/home-background.jpg) !important;
   background-size: cover;
   background-position: center;
 }

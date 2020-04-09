@@ -5,42 +5,43 @@
 
 <nav id="menu" onmouseleave="hideMusicDropdown(1000)" onmouseenter="clearDropdownTimeout()">
   <button id="nav-toggle" class="nav-toggle"></button>
-  <!--<ul class="level-1">
-    <translate lang="en">
-      <li><a href="/en">Home</a></li>
-      <li><a href="/en/om_os">About</a></li>
-      <li><a href="/en/tekster">Music</a></li>
-      <li><a href="/en/koncerter">Live</a></li>
-      <li><a href="/en/kontakt">Contact</a></li>
-    </translate>
-    <translate>
-      <li><a href="/">Hjem</a></li>
-      <li><a href="/om_os">Om os</a></li>
-      <li><a href="#" onclick="toggleMusicDropdown()">Musik</a></li>
-      <li>
-        <ul class="level-2">
-          <li><a href="/tekster">Tekster</a></li>
-          <li><a href="/diskografi">Diskografi</a></li>
-          <li><a href="/noder">Noder</a></li>
-        </ul>
-      </li>
-      <li><a href="/koncerter">Koncerter</a></li>
-      <li><a href="/kontakt">Kontakt</a></li>
-    </translate>
-  </ul>-->
   <div class="nav-row level-1 left">
-    <a href="/">Hjem</a>
-    <a href="/om_os">Om os</a>
-    <span onclick="showMusicDropdown()">Musik</span>
+    <a href="<translate lang="en">/en</translate>/">
+      <translate>Hjem</translate>
+      <translate lang="en">Home</translate>
+    </a>
+    <a href="<translate lang="en">/en</translate>/om_os">
+      <translate>Om os</translate>
+      <translate lang="en">About</translate>
+    </a>
+    <span onclick="showMusicDropdown()">
+      <translate>Musik</translate>
+      <translate lang="en">Music</translate>
+    </span>
   </div>
   <div class="nav-row level-2">
     <span onclick="hideMusicDropdown()">&larr;</span>
-    <a href="/tekster">Tekster</a>
-    <a href="/diskografi">Diskografi</a>
-    <a href="/noder">Noder</a>
+    <a href="<translate lang="en">/en</translate>/tekster">
+      <translate>Tekster</translate>
+      <translate lang="en">Lyrics</translate>
+    </a>
+    <a href="<translate lang="en">/en</translate>/diskografi">
+      <translate>Diskografi</translate>
+      <translate lang="en">Discography</translate>
+    </a>
+    <a href="<translate lang="en">/en</translate>/noder">
+      <translate>Noder</translate>
+      <translate lang="en">Scores</translate>
+    </a>
   </div>
   <div class="nav-row level-1 right">
-    <a href="/koncerter">Koncerter</a>
-    <a href="/kontakt">Kontakt</a>
+    <a href="<translate lang="en">/en</translate>/koncerter">
+      <translate>Koncerter</translate>
+      <translate lang="en">Live</translate>
+    </a>
+    <a href="<translate lang="en">/en</translate>/kontakt">
+      <translate>Kontakt</translate>
+      <translate lang="en">Contact</translate>
+    </a>
   </div>
 </nav>
