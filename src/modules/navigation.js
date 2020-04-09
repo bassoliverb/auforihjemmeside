@@ -1,3 +1,5 @@
+var dropdownTimeout
+
 function toggleMenu () {
   const classList = document.querySelector('#menu').classList
 
@@ -14,12 +16,23 @@ window.addEventListener('load', function () {
   document.querySelector('#nav-toggle').addEventListener('click', toggleMenu)
 })
 
-window.toggleMusicDropdown = function toggleMusicDropdown () {
+window.showMusicDropdown = function () {
   const el = document.getElementById('menu')
 
-  if (el.classList.contains('show-dropdown')) {
-    el.classList.remove('show-dropdown')
-  } else {
-    el.classList.add('show-dropdown')
+  el.classList.add('show-dropdown')
+}
+
+window.hideMusicDropdown = function (delay) {
+  if (delay) {
+    dropdownTimeout = setTimeout(window.hideMusicDropdown, delay)
+    return
   }
+
+  const el = document.getElementById('menu')
+
+  el.classList.remove('show-dropdown')
+}
+
+window.clearDropdownTimeout = function () {
+  this.clearTimeout(dropdownTimeout)
 }

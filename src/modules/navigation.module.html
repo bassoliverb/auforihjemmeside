@@ -3,9 +3,9 @@
   <script type="text/javascript" src="/modules/navigation.js"></script>
 </module:head>
 
-<nav id="menu">
+<nav id="menu" onmouseleave="hideMusicDropdown(1000)" onmouseenter="clearDropdownTimeout()">
   <button id="nav-toggle" class="nav-toggle"></button>
-  <ul>
+  <!--<ul class="level-1">
     <translate lang="en">
       <li><a href="/en">Home</a></li>
       <li><a href="/en/om_os">About</a></li>
@@ -16,10 +16,9 @@
     <translate>
       <li><a href="/">Hjem</a></li>
       <li><a href="/om_os">Om os</a></li>
-      <!--<li><a href="/tekster">Musik</a></li>-->
-      <li class="dropdown-container">
-        <a href="#" onclick="toggleMusicDropdown()">Musik</a>
-        <ul class="dropdown-menu">
+      <li><a href="#" onclick="toggleMusicDropdown()">Musik</a></li>
+      <li>
+        <ul class="level-2">
           <li><a href="/tekster">Tekster</a></li>
           <li><a href="/diskografi">Diskografi</a></li>
           <li><a href="/noder">Noder</a></li>
@@ -28,5 +27,20 @@
       <li><a href="/koncerter">Koncerter</a></li>
       <li><a href="/kontakt">Kontakt</a></li>
     </translate>
-  </ul>
+  </ul>-->
+  <div class="nav-row level-1 left">
+    <a href="/">Hjem</a>
+    <a href="/om_os">Om os</a>
+    <span onclick="showMusicDropdown()">Musik</span>
+  </div>
+  <div class="nav-row level-2">
+    <span onclick="hideMusicDropdown()">&larr;</span>
+    <a href="/tekster">Tekster</a>
+    <a href="/diskografi">Diskografi</a>
+    <a href="/noder">Noder</a>
+  </div>
+  <div class="nav-row level-1 right">
+    <a href="/koncerter">Koncerter</a>
+    <a href="/kontakt">Kontakt</a>
+  </div>
 </nav>

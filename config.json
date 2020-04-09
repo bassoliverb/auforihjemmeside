@@ -6,7 +6,6 @@
     "plugin-translation",
     "./tools/lyrics-notation.js",
     "plugin-postcss",
-    "plugin-inline-css",
-    "plugin-html-minify"
+    "plugin-inline-css"
   ]
 }

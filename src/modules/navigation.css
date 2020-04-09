@@ -11,6 +11,11 @@ nav {
   right: 0;
   width: 100rem;
   margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "level-1-left level-1-right"
+    "level-2 level-2";
+  justify-content: end;
 }
 
 nav::after {
@@ -19,62 +24,61 @@ nav::after {
   clear: both;
 }
 
-nav > ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-  position: relative;
+nav .nav-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
 
-nav > ul > li {
-  float: left;
-  list-style: none;
-  margin-left: 4rem;
-  transform: scaleY(1);
-  transform-origin: top;
+nav .nav-row.level-1.left {
+  grid-area: level-1-left;
 }
 
-nav.show-dropdown > ul > li {
-  transform: scaleY(0);
+nav .nav-row.level-1.right {
+  grid-area: level-1-right;
 }
 
-nav a {
+nav .nav-row.level-1 {
+  height: 3.5rem;
+  align-items: flex-end;
+}
+
+nav .nav-row.level-2 {
+  grid-area: level-2;
+  height: 0;
+  align-items: flex-start;
+}
+
+nav.show-dropdown .nav-row.level-1 {
+  height: 0;
+}
+
+nav.show-dropdown .nav-row.level-2 {
+  height: 3.5rem;
+}
+
+nav .nav-row > * {
   color: #1d1d1d;
   text-decoration: none;
   padding: 0 0.6rem 0.2rem;
+  border-bottom: 1px solid transparent;
+  margin-left: 4rem;
+  cursor: pointer;
 }
 
-nav a:visited {
+nav .nav-row > *:visited {
   color: #1d1d1d;
 }
 
-nav a:hover {
-  border-bottom: 1px solid #bebebe;
+nav .nav-row > *:hover {
+  border-color: #bebebe;
 }
 
 nav .nav-toggle {
   display: none;
-}
-
-nav .dropdown-menu {
-  display: block;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  transform-origin: bottom;
-  transform: scaleY(0);
-}
-
-nav.show-dropdown .dropdown-menu {
-  transform: scaleY(1);
-}
-
-nav .dropdown-menu li {
-  list-style: none;
-  float: left;
-  padding-left: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-nav:not(.open) a {
+nav:not(.open) .nav-row > * {
 	color:white ! important;
 }
 
