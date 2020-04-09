@@ -95,6 +95,10 @@ nav .nav-toggle {
     justify-content: center;
   }
 
+  nav .hide-on-mobile {
+    display: none;
+  }
+
   nav.open {
     background-color: #ffffff;
     position: fixed;
@@ -112,18 +116,17 @@ nav .nav-toggle {
     transition: all 0.2s ease-out;
   }
 
-  nav .nav-row > span {
-    display: none;
-  }
-
   nav .nav-row.level-1 {
     height: auto;
     align-items: center;
   }
 
   nav .nav-row.level-2 {
-    height: auto;
     align-items: center;
+  }
+
+  nav.show-dropdown .nav-row.level-2 {
+    height: auto;
   }
 
   nav.open > .nav-row {
