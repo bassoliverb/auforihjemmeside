@@ -1,0 +1,217 @@
+main {
+	padding-top: 8rem;
+}
+
+body{
+	background-image: url(/images/raat_papir3.png);
+	background-size: auto 100vh;
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.infobox {
+	position: relative;
+	width: 650px;
+	margin: 0 auto;
+	margin-bottom: 8rem;
+}
+
+.hovedblomst {
+	width: 250px;
+	transform: rotate(90deg);
+	margin: -15rem auto;
+	margin-bottom: -15.5rem;
+}
+
+.infobox > div > img {
+	width: 100%;
+
+}
+
+.text {
+	width: 100%;
+	padding-top: 1rem;
+	border-top: 1px solid #bbb;
+	border-right: 1px none red;
+}
+
+.infobox > .text > p {
+	padding: 0 1rem;
+	line-height: 1.2;
+	font-size: 1.4rem;
+}
+
+.singlespace {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.doublespace {
+	margin-top: 0.5em;
+}
+
+.mail {
+	display: block;
+	color: black;
+}
+
+.button {
+	float: right;
+	font-size: 1.2rem;
+	margin-right: 5rem;
+	padding: .8rem 1.8rem;
+	margin-top: -1.5rem;
+	border: 1px solid black;
+	background-color: #eff0f2;
+	user-select: none;
+}
+
+.button:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #e1e2e4;
+}
+
+
+.node-container {
+
+	margin: 5rem auto;
+	display: flex;
+	justify-content: center;
+}
+
+.node-display{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4rem;
+	width: 100%;
+}
+
+.node {
+	width: 100%;
+	background-color: #fff;
+	cursor: pointer;
+	box-shadow: 0px 2px 6px 0 #636363;
+
+}
+
+.node img {
+	width: 100%;
+}
+
+.popup {
+	display: block;
+	z-index: 200;
+	position: fixed;
+	width: 80%;
+	max-width: 600px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 200ms ease-in-out;
+	background-color: #fff;
+	border: 1px solid black;
+}
+
+.popup.active {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+	max-width: 100%;
+}
+
+.popup button {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 3rem;
+	background:none;
+	width: 4rem;
+	height: 4rem;
+}
+
+#overlay {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.5);
+	transition: 200ms ease-in-out;
+	opacity: 0;
+}
+
+#overlay.active {
+	pointer-events: all;
+	opacity: 1;
+	z-index: 199;
+}
+
+@media screen and (max-width: 1100px) {
+	.node-container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hovedblomst {
+		margin: -20rem auto;
+		margin-bottom: -15.5rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.node-display{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 733px) {
+	.infobox{
+		width: 85%;
+	}
+
+	.button{
+		margin-top: 1.5rem;
+		margin-right: 0;
+		margin-left: 1rem;;
+		float: left;
+	}
+
+	.hovedblomst {
+		width: 200px;
+		margin: -20rem auto;
+		margin-bottom: -12.5rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.node-display{
+		grid-template-columns: 1fr;
+	}
+
+	.node-container{
+		width: 70%;
+	}
+
+	.hovedblomst {
+		width: 170px;
+		margin: -15rem auto;
+		margin-bottom: -10.5rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.hovedblomst {
+		width: 130px;
+		margin: -13rem auto;
+		margin-bottom: -8.5rem;
+	}
+}

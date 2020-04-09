@@ -8,6 +8,48 @@ main {
 body{
   background-image: url(/images/raat_papir3.png);
   background-size: auto 100vh;
+  width: 100rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.blomst1{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  left: 0px;
+  margin-top: -10rem;
+  transform: rotate(-130deg);
+}
+
+.blomst1 img {
+  width: 100%;
+}
+
+.blomst2{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  bottom: -7rem;
+  right: -19rem;
+  transform: rotate(160deg) scaleX(-1);
+}
+
+.blomst2 img {
+  width: 100%;
+}
+
+.blomst3{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  bottom: -10rem;
+  left: -20rem;
+  transform: rotate(80deg) scaleX(-1);
+}
+
+.blomst3 img {
+  width: 100%;
 }
 
 .contact {
@@ -71,6 +113,14 @@ h2 > a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    overflow: auto;
+  }
+
+  .blomster {
+    display: none;
+  }
+
   .contact {
     flex-direction: column;
     margin: 0;
@@ -100,5 +150,18 @@ h2 > a:hover {
   nav button.nav-toggle {
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
     opacity: 1;
+  }
+
+  .blomst2 {
+    right: 20%;
+    bottom: 30rem;
+    transform: rotate(145deg) scaleX(-1);
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .blomst2{
+    left: 355px;
   }
 }
