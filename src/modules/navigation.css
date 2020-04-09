@@ -89,6 +89,10 @@ nav .nav-toggle {
     height: 100%;
     transition: all 0.2s ease-out;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   nav.open {
@@ -98,26 +102,37 @@ nav .nav-toggle {
     pointer-events: all;
   }
 
-  nav > ul {
-    float: none;
-    display: block;
+  nav .nav-row {
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     opacity: 0;
     position: relative;
-    top: 40vh;
-    transform: translateY(-65%);
+    transform: translateY(-5vh);
     transition: all 0.2s ease-out;
   }
 
-  nav.open > ul {
-    opacity: 1;
-    transform: translateY(-50%);
+  nav .nav-row > span {
+    display: none;
   }
 
-  nav > ul > li {
-    float: none;
+  nav .nav-row.level-1 {
+    height: auto;
+    align-items: center;
+  }
+
+  nav .nav-row.level-2 {
+    height: auto;
+    align-items: center;
+  }
+
+  nav.open > .nav-row {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  nav .nav-row > * {
     margin: 1rem 0;
-    text-align: center;
   }
 
   nav .nav-toggle {
