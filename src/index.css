@@ -50,3 +50,15 @@ nav .nav-toggle {
 .credits a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 500px) {
+  .credits{
+    font-size: .4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .credits{
+    font-size: .35rem;
+  }
+}

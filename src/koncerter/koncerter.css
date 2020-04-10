@@ -305,9 +305,9 @@ tr>td:nth-child(3) {
   	height: 10rem;
   }
 .mereinfo a{
-	width: 100%;
+	width: 90%;
 	padding: 0.8rem 0;
-	margin-left: 0;
+	font-size: 1.2rem;
 }
   .dato {
   	width: 5rem;

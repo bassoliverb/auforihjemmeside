@@ -165,3 +165,15 @@ h2 > a:hover {
     left: 355px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  
+  .details h1{
+    font-size: 2.7rem;
+  }
+  
+  .details li {
+    font-size: 1.8rem;
+  }
+
+}
