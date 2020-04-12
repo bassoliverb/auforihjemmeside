@@ -91,15 +91,57 @@ body{
 }
 
 .node {
+	position: relative;
 	width: 100%;
 	background-color: #fff;
 	cursor: pointer;
 	box-shadow: 0px 2px 6px 0 #636363;
+	overflow: hidden;
 
 }
 
 .node img {
 	width: 100%;
+}
+
+.sangtitel{
+	top: -1px;
+	transform: translateY(-110%);
+}
+
+.albumtitel{
+	bottom: -1px;
+	transform: translateY(110%);
+}
+
+.albumtitel, .sangtitel {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(23,23,23, 0.74);
+	border-radius: 1px;
+	transition: ease-in-out 200ms;
+	transition-delay:10ms;
+	box-shadow: 0px 0px 12px 0 #868686;
+}
+
+.sangtitel > p {
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+	margin: 1rem auto;
+	text-shadow: -1px 1px 5px #000000;
+}
+
+.albumtitel > p {
+	text-align: center;
+	color: white;
+	font-size: 1.2rem;
+	margin: 1rem auto;
+	text-shadow: -1px 1px 5px #000000;
+}
+
+.node:hover .sangtitel, .node:hover .albumtitel{
+	transform: translateY(0%);
 }
 
 .popup {

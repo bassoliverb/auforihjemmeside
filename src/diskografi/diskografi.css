@@ -133,13 +133,13 @@ h2 {
 
 .songs > ol {
 	list-style-type: decimal;
-	margin-left: 1rem;
+	margin-left: 0rem;
 	font-size: 1.8rem;
 }
 
-.songs > li {
-	padding-left: 1rem;
-	padding-top: 1rem;
+.songs > ol > li {
+	padding-left: .4rem;
+	padding-top: .8rem;
 }
 
 
@@ -221,8 +221,12 @@ h2 {
 
 	}
 
+	.songs {
+		margin-top: -.6rem;
+	}
+
 	.songs > ol{
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin-left: -1rem;
 	}
 
@@ -264,10 +268,10 @@ h2 {
 	.songs > ol{
 		font-size: .8rem;
 		margin-left: -2rem;
-		margin-top: .3rem;
+		margin-top: 8px;
 	}
 
-	li {
+	.songs > ol > li {
 		padding-top: 0.5rem;
 	}
 
@@ -279,8 +283,8 @@ h2 {
 	padding-top: 4rem;
 	}
 	.diskografi {
-		width: 200px;
-		height: 902px;
+		width: 225px;
+		height: 1005px;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-column-gap: 0;
@@ -292,7 +296,7 @@ h2 {
 	}
 
 	h1{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		margin-top: 2rem;
 	}
 
@@ -300,15 +304,15 @@ h2 {
 		margin: 0;
 		margin-left: 1.2rem;
 		margin-top: -1rem;
-		font-size: .6rem;
+		font-size: .8rem;
 		font-weight: normal;
 
 	}
 
 	.songs > ol{
-		font-size: .9rem;
+		font-size: 1rem;
 		margin-left: -2rem;
-		margin-top: .3rem;
+		margin-top: 12px;
 	}
 
 	li {
@@ -317,7 +321,7 @@ h2 {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 450px) {
 	section{
 	width: 300px;
 	padding-top: 4rem;

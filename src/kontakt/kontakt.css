@@ -147,9 +147,12 @@ h2 > a:hover {
     padding: 0;
   }
 
-  nav button.nav-toggle {
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
-    opacity: 1;
+  nav:not(.open) .nav-row > * {
+    color:white ! important;
+  }
+  
+  nav .nav-toggle {
+    filter: invert(1);
   }
 
   .blomst2 {
