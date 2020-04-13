@@ -1,3 +1,11 @@
+html > div, html > button, html > p {
+  font-size: 16px;
+}
+
+div, button, p {
+  font-size: 100%;
+}
+
 .player {
   position: fixed;
   left: 0;

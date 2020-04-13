@@ -1,3 +1,7 @@
+html > body {
+	font-size: 16px;
+}
+
 main {
 	padding-top: 8rem;
 }
@@ -5,6 +9,7 @@ main {
 body{
 	background-image: url(/images/raat_papir3.png);
 	background-size: auto 100vh;
+	font-size: 100%;
 }
 
 .wrapper{
@@ -118,7 +123,7 @@ section {
 h1 {
 	width: 50%;
 	margin-top: 3rem;
-	margin-left: 1rem;
+	margin-left: 1.1rem;
 	font-size: 3.2rem;
 	white-space: nowrap;
 }
@@ -134,12 +139,12 @@ h2 {
 .songs > ol {
 	list-style-type: decimal;
 	margin-left: 0rem;
-	font-size: 1.8rem;
 }
 
 .songs > ol > li {
 	padding-left: .4rem;
 	padding-top: .8rem;
+	font-size: 2rem;
 }
 
 
@@ -155,11 +160,20 @@ h2 {
 	}
 
 	h1{
-		font-size: 3rem;
+		font-size: 2.5rem;
+		margin-top: 2rem;
 	}
 
-	ol{
+	h2 {
+		margin-top: -2rem;
+	}
+
+	.songs > ol > li{
 		font-size: 1.5rem;
+	}
+
+	.songs > ol {
+		margin-left: -1rem;
 	}
 
 }
@@ -179,10 +193,10 @@ h2 {
 	}
 
 	h1{
-		font-size: 2.8rem;
+		font-size: 2.4rem;
 	}
 
-	.songs > ol{
+	.songs > ol > li{
 		font-size: 1.5rem;
 	}
 }
@@ -209,23 +223,23 @@ h2 {
 
 	h1{
 		font-size: 1.7rem;
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	h2{
 		margin: 0;
 		margin-left: 1.2rem;
-		margin-top: -1.5rem;
+		margin-top: -1.3rem;
 		font-size: .8rem;
 		font-weight: normal;
 
 	}
 
 	.songs {
-		margin-top: -.6rem;
+		margin-top: -1.2rem;
 	}
 
-	.songs > ol{
+	.songs > ol > li{
 		font-size: 1rem;
 		margin-left: -1rem;
 	}
@@ -252,29 +266,27 @@ h2 {
 	}
 
 	h1{
-		font-size: 1.5rem;
-		margin-top: 2rem;
+		font-size: 1.3rem;
+		margin-left: .4rem;
+		margin-top: 1.1rem;
 	}
 
 	h2{
 		margin: 0;
-		margin-left: 1.2rem;
-		margin-top: -1rem;
+		margin-left: .4rem;
+		margin-top: -1.3rem;
 		font-size: .6rem;
 		font-weight: normal;
+		margin-bottom: 2rem;
 
 	}
 
-	.songs > ol{
-		font-size: .8rem;
-		margin-left: -2rem;
-		margin-top: 8px;
+	.songs > ol > li{
+		font-size: .75rem;
+		margin-left: -1.8rem;
+		margin-top: 3px;
+		padding-top: 0rem;
 	}
-
-	.songs > ol > li {
-		padding-top: 0.5rem;
-	}
-
 }
 
 @media screen and (max-width: 550px) {
@@ -297,28 +309,28 @@ h2 {
 
 	h1{
 		font-size: 1.7rem;
-		margin-top: 2rem;
+		margin-top: 1.2rem;
 	}
 
 	h2{
 		margin: 0;
-		margin-left: 1.2rem;
-		margin-top: -1rem;
+		margin-left: .5rem;
+		margin-top: -1.5rem;
 		font-size: .8rem;
 		font-weight: normal;
+		margin-bottom: 2.5rem;
 
 	}
 
-	.songs > ol{
+	.songs {
+		margin-left: .5rem;
+	}
+
+	.songs > ol > li{
 		font-size: 1rem;
 		margin-left: -2rem;
-		margin-top: 12px;
+		margin-top: 5px;
 	}
-
-	li {
-		padding-top: 0.5rem;
-	}
-
 }
 
 @media screen and (max-width: 450px) {

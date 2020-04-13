@@ -1,3 +1,7 @@
+html > body{
+  font-size: 16px;
+}
+
 main{
   padding-top: 10rem;
   
@@ -9,6 +13,7 @@ body{
   width: 100rem;
   margin: 0 auto;
   overflow-x: hidden;
+  font-size: 100%;
 }
 
 .blomster {
@@ -134,7 +139,7 @@ body{
   .doublespace {
     margin-top: 1em;
   }
-  
+
   .image > img {
     width: 56rem;
     border-radius: 2px;

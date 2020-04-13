@@ -1,3 +1,7 @@
+html > body {
+  font-size: 16px;
+}
+
 @font-face {
   font-family: Music;
   src: url(/tekster/music-font.ttf);
@@ -8,6 +12,7 @@ body{
   background-size: auto 100vh;
   width: 100rem;
   margin: 0 auto;
+  font-size: 100%;
 }
 
 main {
@@ -232,10 +237,11 @@ sup {
 
 @media screen and (max-width: 500px) {
   .blomst img, .blomst2 img, .blomst3 img, .blomst4 img, .blomst5 img, .blomsta img{
-  display: none;}
+  display: none !important;
+}
 
   .blomst, .blomst2, .blomst3, .blomst4, .blomst5, .blomsta {
-    display: none;
+    display: none !important;
   }
 
 }

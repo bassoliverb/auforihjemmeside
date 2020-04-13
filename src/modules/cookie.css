@@ -1,3 +1,11 @@
+html > div, html > p {
+	font-size: 16px;
+}
+
+div, p {
+  font-size: 100%;
+}
+
 @keyframes slide-in {
   0% {
     transform: translate3d(0, calc(150% + 10rem), 0);
