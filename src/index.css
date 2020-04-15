@@ -34,7 +34,6 @@ nav .nav-toggle {
 
 
 .credits{
-  background: rgb(255,207,28);
   background: linear-gradient(0deg, rgba(255,207,28,1) 0%, rgba(255,228,28,1) 94%);
   position: fixed;
   bottom: 0;

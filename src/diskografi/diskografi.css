@@ -86,19 +86,19 @@ section {
 
 
 .runddans > .songlist {
-	background-color: rgba(242,104,24, 0.8);
+	background-color: rgba(242,104,24, 0.7);
 }
 
 .overflader > .songlist {
-	background-color: rgba(255,191,42, 0.8);
+	background-color: rgba(255,191,42, 0.7);
 }
 
 .stjernetraade > .songlist {
-	background-color: rgba(248,226,111, 0.8);
+	background-color: rgba(248,226,111, 0.7);
 }
 
 .blaamaerker > .songlist {
-	background-color: rgba(92,151,212, 0.8);
+	background-color: rgba(92,151,212, 0.7);
 }
 
 .songlist{
@@ -111,13 +111,14 @@ section {
 	transition: transform .3s;
 	/*transition-delay: .02s 1s;*/
 	transform: translateX(101%);
+	font-family: Source Sans Pro, sans-serif;
 }
 
 .runddans:hover .songlist,
 .overflader:hover .songlist,
 .stjernetraade:hover .songlist,
 .blaamaerker:hover .songlist{
-	transform: translateX(0%);
+	transform: translateX(1%);
 }
 
 h1 {
@@ -126,6 +127,7 @@ h1 {
 	margin-left: 1.1rem;
 	font-size: 3.2rem;
 	white-space: nowrap;
+	font-family: Source Serif Pro, serif;
 }
 
 h2 {
