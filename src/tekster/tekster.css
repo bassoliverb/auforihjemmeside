@@ -1,7 +1,3 @@
-html > body {
-  font-size: 16px;
-}
-
 @font-face {
   font-family: Music;
   src: url(/tekster/music-font.ttf);
@@ -45,15 +41,15 @@ main {
   justify-self: end;
 }
 
-.blomst, .blomsta, .blomst2, .blomst3, .blomst4, .blomst5 {
+.blomst {
   position: absolute;
 }
 
-.blomst img, .blomst2 img, .blomst3 img, .blomst4 img, .blomst5 img, .blomsta img{
+.blomst img {
   width: 100%;
 }
 
-.blomst {
+.blomst1 {
   width: 200px;
   right: 40px;
 }
@@ -251,5 +247,58 @@ sup {
   .column > .img-track > img {
     width: 100px;
     margin: 3rem 0 0;
+  }
+}
+
+@media print {
+  .blomst {
+    display: none;
+  }
+
+  .column {
+    grid-template-columns: min-content max-content;
+    margin: 0;
+    padding: 5vh;
+    height: 100vh;
+  }
+
+  .column:first-child {
+    margin: 0;
+  }
+
+  .text-track {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-column: 2;
+    height: 90vh;
+  }
+
+  .text-track button {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  body {
+    padding-bottom: 0;
+    width: 100%;
+    background: none;
+    margin: 0;
+  }
+
+  p {
+    width: 25vw;
+    padding-right: 3rem;
+  }
+
+  h1 {
+    width: 25vw;
+  }
+
+  .column > .img-track > img {
+    width: 10vw;
   }
 }

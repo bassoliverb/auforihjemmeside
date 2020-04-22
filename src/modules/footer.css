@@ -29,3 +29,9 @@ footer img:hover {
     height: 3.5rem;
   }
 }
+
+@media print {
+  footer {
+    display: none;
+  }
+}

@@ -1,10 +1,5 @@
-html > body{
-  font-size: 16px;
-}
-
 main{
   padding-top: 10rem;
-  
 }
 
 body{
@@ -119,7 +114,7 @@ body{
 .about{
   width: 80%;
   margin: 0 auto;
-  
+
 }
 
 .text {
@@ -136,7 +131,7 @@ body{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
-  
+
   .doublespace {
     margin-top: 1em;
   }
@@ -183,9 +178,9 @@ body{
 
   @media screen and (max-width: 1000px){
 
-    .blomst1, .blomst1 img, .blomst2, .blomst2 img, 
-    .blomst3, .blomst3 img, .blomst4, .blomst4 img, 
-    .blomst5, .blomst5 img, .blomst6, .blomst6 img, 
+    .blomst1, .blomst1 img, .blomst2, .blomst2 img,
+    .blomst3, .blomst3 img, .blomst4, .blomst4 img,
+    .blomst5, .blomst5 img, .blomst6, .blomst6 img,
     .logo_icon, .logo_icon img {
       display: none;
     }
