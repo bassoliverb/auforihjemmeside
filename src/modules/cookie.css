@@ -38,9 +38,10 @@
   margin-left: 0.5rem;
   background: transparent;
   border: 0;
-  color: #759f5a;
+  color: #000000;
   font-size: 1.6rem;
   padding: 0;
+  float: right;
 }
 
 #cookie-warning .cookie-text {
@@ -49,6 +50,7 @@
 
 #cookie-warning.open .cookie-text {
   display: block;
+  float: left;
 }
 
 #cookie-warning p {
@@ -77,7 +79,20 @@
   border: 0;
 }
 
+#cookie-warning .cookie-greeting > button {
+  margin-left: 0.5rem;
+  padding: 0.6rem 0;
+  width: 10rem;
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
+  border: 0;
+}
+
 #cookie-warning .cookie-buttons > .cookie-accept {
+  background-color: #759f5a;
+}
+
+#cookie-warning .cookie-greeting > .cookie-accept {
   background-color: #759f5a;
 }
 
