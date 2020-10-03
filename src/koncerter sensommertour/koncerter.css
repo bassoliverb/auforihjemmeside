@@ -9,47 +9,135 @@ main {
 }
 
 body {
-	background-image: url(/images/raat_papir3.png);
+	background-image: url(/images/sortbaggrund.jpg);
 	background-size: cover;
   width: 100rem;
   margin: 0 auto;
   font-size: 100%;
 }
 
-.koncert-container .head {
-	width: 100%;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-end;
-	height: 15em;
+nav:not(.open) .nav-row > * {
+	color:white ! important;
 }
 
-.koncert-container .head img {
-	width: 150px;
-	transform: rotate(270deg);
-	margin-bottom: -11rem;
-    margin-right: 4rem;
+nav .nav-toggle {
+	filter: invert(1);
 }
 
-/*.art-container div img{
-	height: 30rem;
-	rotate: 90deg;
-}*/
+.art-container{
+	width: 950px;
+	margin: 0 auto;
+}
+
+.sensommertur {
+	position: absolute;
+	display: grid;
+	grid-template-rows: 2fr 4fr 2fr;
+	grid-template-columns: 2fr 6fr 2fr;
+	margin-top:-5rem;
+	height: 31rem;
+	width: 950px;
+}
+
+.sensommertur > div {
+	z-index: 1;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(5deg);
+	}
+
+	75% {
+		transform: rotateZ(-5deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(5deg);
+	}
+
+	75% {
+		transform: rotateZ(-5deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+
+.sol1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/Blomst1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	transform-origin: center center;
+	animation: grow 5s ease infinite;
+	animation-duration: alternate;
+
+}
+
+.sol2 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/Blomst2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	transform-origin: center center;
+	animation: spin 7s linear reverse infinite;
+}
+
+.auforilogo {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(/images/turlogo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.tourbadge {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-image: url(/images/Sensommertur.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .koncert-container{
 	padding: 2rem;
-	/*background-color: rgba(69, 69, 69, .4);*/
+	background-color: rgba(69, 69, 69, .4);
 	width: 900px;
-	margin: auto;
+	margin: 32rem auto 0 auto;
 	border-radius: 5px;
+	box-shadow: 0 2px 20px 0px #1b1a1a;
 	font-family: Source Sans Pro, sans-serif;
-}
-
-.koncert-container p{
-	margin: 0 0 10px 0;
-	font-size: 4em;
 }
 
 .koncerttabel{
@@ -59,13 +147,12 @@ body {
 	/*background-color: orange;*/
 	border-collapse: collapse;
 	border-spacing: 0 0;
-	margin-top: 2rem;
 }
 
 
 tr {
 	height: 12rem;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	border-top: 1px solid black;
 }
 
@@ -76,6 +163,9 @@ tr:last-child {
 td {
 	width: 25%;
 	z-index: 10;
+	color: white;
+	text-shadow: 1px 1px 8px black;
+	/*text-align: center;*/
 }
 
 /*tr>td:first-child{
@@ -84,16 +174,15 @@ td {
 
 tr>td:nth-child(2) {
 	text-align: center;
-	padding-right: 10px;
 }
 
 tr>td:nth-child(3) {
-	text-align: left;
+	text-align: center;
 	/*width: 30%;*/
 }
 
 .dato {
-	/*background-color: #ffffff9e;*/
+	background-color: #ffe478;
 	border-radius: 10px;
 	height: 7rem;
 	width: 10rem;
@@ -102,7 +191,7 @@ tr>td:nth-child(3) {
 	margin-left: 2rem;
 	z-index: 10;
 	color: black;
-	box-shadow: 0px 0px 0px 2px #000000;
+	box-shadow: -1px 2px 9px 2px #1d1c1c;
 	text-shadow: none !important;
 }
 
@@ -119,21 +208,22 @@ tr>td:nth-child(3) {
 .mereinfo a{
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: white;
 	letter-spacing: 0.1rem;
 	font-size: 1.3rem;
 	width: 80%;
 	margin-left: 10%;
 	text-align: center;
 	border: 2rem;
-	border: 2px solid black;
+	border: 2px solid white;
 	padding: 1.5rem 0;
 	border-radius: 1px;
 	text-shadow: none;
 }
 
 .mereinfo a:hover{
-	background-color: white;
+	border: 2px solid rgba(255, 255, 255, .3 );
+	background-color: rgba(255, 255, 255, .8);
 	box-shadow: -1px 9px 36px -20px rgba(0,0,0,0.45);
 	color:black;
 
@@ -162,10 +252,7 @@ tr>td:nth-child(3) {
   	font-size: 1.7rem;
   }
   tr {
-  	font-size: 1.6rem;
-  }
-  .head p {
-	  font-size: 3.5em;
+  	font-size: 1.5rem;
   }
 }
 
@@ -192,20 +279,6 @@ tr>td:nth-child(3) {
   }
   tr {
   	font-size: 1.5rem;
-  }
-
-  .koncert-container {
-	margin: 0 auto;
-  }
-
-  .head p{
-	  font-size: 3em;
-  }
-
-.koncert-container .head img {
-	width: 90px;
-	margin-bottom: -7rem;
-    margin-right: 2rem;
   }
 }
 
@@ -239,30 +312,12 @@ tr>td:nth-child(3) {
 	font-size: 1.2rem;
 }
   .dato {
-  	width: 5.5rem;
+  	width: 5rem;
   	font-size: 1.2rem;
   	margin-left: 0;
   	height: 5.5rem;
   }
   tr>td:nth-child(2) {
 	text-align: left;
-}
-
-.koncert-container {
-	margin: 0 auto;
-  }
-
-.head p{
-	font-size: 2em;
-}
-
-.koncert-container .head {
-	height: 10em;
-}
-
-.koncert-container .head img {
-  width: 50px;
-  margin-bottom: -7rem;
-  margin: 0 0 -30px 0;
 }
 }
