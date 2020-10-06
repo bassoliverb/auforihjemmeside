@@ -30,11 +30,20 @@
   animation: slide-in 2s ease-out;
 }
 
+#cookie-warning .cookie-greeting {
+  display: flex;
+  align-items: center;
+}
+
+#cookie-warning .spacer {
+  flex: 1 0 auto;
+}
+
 #cookie-warning.open .cookie-greeting {
   display: none;
 }
 
-#cookie-warning .cookie-greeting button {
+#cookie-warning .cookie-greeting button:not(.cookie-accept) {
   margin-left: 0.5rem;
   background: transparent;
   border: 0;
@@ -68,7 +77,8 @@
   display: flex;
 }
 
-#cookie-warning .cookie-buttons > button {
+#cookie-warning .cookie-buttons > button,
+#cookie-warning .cookie-greeting .cookie-accept {
   margin-left: 0.5rem;
   padding: 0.6rem 0;
   width: 10rem;
@@ -77,11 +87,11 @@
   border: 0;
 }
 
-#cookie-warning .cookie-buttons > .cookie-accept {
+#cookie-warning .cookie-accept {
   background-color: #759f5a;
 }
 
-#cookie-warning .cookie-buttons > .cookie-reject {
+#cookie-warning .cookie-reject {
   background-color: #ddddd7;
 }
 
