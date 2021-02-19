@@ -1,0 +1,179 @@
+body{
+    background-image: url(/images/raat_papir4.png);
+    background-size: auto 100vh;
+    width: 100rem;
+    margin: 0 auto;
+    font-size: 100%;
+  }
+  
+  main {
+    padding-top: 8rem;
+  }
+
+.nav{
+    width: 1000px;
+    position: absolute;
+    margin: 6rem 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+    background-color: rgb(255, 235, 184);
+    padding: 1.5rem 4em;
+    border-radius: 1em;
+    /*box-shadow: 0px 0px 0px 1px gray;*/
+    transition: 0.2s;
+}
+
+.nav a:link{
+    color: black;
+}
+
+.nav a:visited{
+    color: black;
+}
+
+.nav a:hover{
+    background-color: rgb(255, 202, 68);
+    
+}
+
+
+
+.papir{
+    margin-top: 7rem;
+    padding: 9rem 13rem;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
+}
+
+h1{
+    margin-bottom: 3.5rem;
+}
+
+.definition{
+    margin: 2.5em 3em;
+    font-style: italic;
+}
+
+.citat{
+    margin-top: 3em;
+}
+
+.citat-slut{
+    margin-bottom: 4em;
+}
+
+.citat, .citat-slut{
+    font-style: italic;
+    padding: 0px 5em;
+    font-size: 14px;
+}
+
+p{
+    margin: 1em 0px;
+}
+
+ul{
+    margin-bottom: 2em;
+}
+
+
+.music_player{
+    margin-top: 5rem;
+    /*background-color: #262d46;*/
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music_player button{
+    padding: 1em;
+    margin: 0px 10px;
+}
+
+.left, .right{
+    position: relative;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*color: white;*/
+}
+
+.left img{
+    height: 95%;
+    width: 95%;
+
+}
+
+.right .io{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right .io button{
+    background-color: orange;
+}
+
+.right #song_title{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.right #release{
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.right .duration{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20px;
+    margin-top: 40px;
+}
+
+.right .duration input[type="range"]{
+    width: 70%;
+}
+
+.right .show_song_number{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    background-color: #e4e4e4;
+    padding: 1em 2em;
+    border-radius: 7px;
+}
+.right .show_song_number p:nth-child(2){
+    margin: 0 5px;
+}

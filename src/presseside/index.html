@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <translate>AUFORI: Pressetekst</translate>
+    <translate lang="en">AUFORI: Press</translate>
+  </title>
+  <module>modules/metatags.html</module>
+  <link rel="stylesheet" type="text/css" href="/presseside/presseside.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script type="text/javascript" src="/tekster/tekster.js"></script>
+  <meta property="og:description" content="Tekster">
+  <meta name="description" content="Tekster">
+  <meta property="og:url" content="https://aufori.dk/tekster">
+  <link rel="canonical" href="https://aufori.dk/tekster">
+</head>
+<body>
+   <div class="nav">
+       <a href="/index.html">Gå til AUFORI's hjemmeside</a>
+   </div>
+<main>
+    <section class="papir">
+        <h1>Pressetekst 2021</h1>
+        <p><img src="/images/logoubaggrund.png" style="width: 18em; float: right; margin-top: -16rem; margin-right: -7rem;"></p>
+        <p style="padding-right: 24rem;">Navnet AUFORI er en sammentrækning af ordene ​eufori​, ​apori ​og aforisme​, og alle 3 ord er nøgleord til den musik, vi gerne vil skabe.</p>
+           <p class="definition">Eufori: ​Den stærke følelse af velvære og lykke<br>
+            Apori: ​Rådvildheden og tvivlen<br>
+            Aforisme:​ Det kortfattede, fyndige udtryk for en tanke</p>
+            <p>Vores sange består af ærlig og skrøbelig poesi, og indeholder sproglige billeder og refleksioner. Med vores musik vil vi skabe et rum hvor vi kan reflektere over verden, fremfor at bekymre os om den - det rum vil vi gerne invitere andre med ind i. Vi bruger klare elementer i vores musik, som gør det enkelt og velvalgt. Med vores sange og skriverier, kommer vi med vores bud på hvordan verden kan blive set.</p>
+            <p>AUFORI består af Anna Ritsmar (forsanger), Óliver Bernburg (guitarist) og Bjarke Mathiasen (pianist). Vi opstod i 2016, hvor vi spillede vores debut-koncert på UHØRT festival. Bandet har to albumudgivelser ude med to tilhørende singler - den seneste udgivelse ‘Overflader’ fra April 2020.</p>
+            <p class="citat">Det gør ondt, på den der måde, hvor det løber dig ned af ryggen med kuldegysninger, fordi stemme, klaverspil og guitarrytmer bare skaber den absolut mest perfekte lille bobbel af inderlighed, af nærvær og af ærlighed. Det er langt væk fra storladent i produktion, men i stedet småt og tæt på i lyden. Og det er fantastisk."</p>
+            <p class="citat-slut">- Augusta Misha Glahn-Abrahamsen, Projektleder hos Karrierekanonen</p>
+            <p>Her er et udpluk af nogle af de koncerter vi har spillet:</p>
+        <ul>
+            <li>UHØRT festival 2016</li>
+            <li>Klaverfabrikken 2017</li>
+            <li>SPOT festival 2018</li>
+            <li>Gimle 2018</li>
+            <li>Pumpehusets byhave 2018, ‘19, ‘20</li>
+            <li>New Note festival 2018</li>
+            <li>Smukfest 2018, finalen i KarriereKanonen</li>
+            <li>DR koncerthuset 2019</li>
+            <li>Wonderfestiwall 2019</li>
+            <li>Walthers Musikcafé 2020</li>
+            <li>Haarders 2020</li>
+        </ul>
+            <p>Bandet har deltaget i finalen hos DR og Bandakademiets ‘KarriereKanonen 2018’, og har været featured på DR’s P3 og P6 Beat.</p>
+    </section>
+<section class="music_player">
+
+    <div class="left">
+        <img id="track_image" src="/images/blode_universer.png">
+    </div>
+
+    <div class="right">
+        <div class="show_song_number">
+            <p id="present">1</p>
+            <p>/</p>
+            <p id="total">3</p>
+        </div>
+
+        <p id="song_title">Bløde Universer</p>
+        <p id="release">2021 - Single</p>
+
+        <div class="io">
+            <button onclick="previous_song()" id="pre"><i class="fas fa-step-backward"></i></button>
+            <button onclick="justplay()" id="play"><i class="fas fa-play"></i></button>
+            <button onclick="next_song()" id="next"><i class="fas fa-step-forward"></i></button>
+        </div>
+
+        <div class="duration">
+        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+    </div>
+</section>
+</main>
+<module>modules/footer.html</module>
+<module>modules/cookie.html</module>
+<script src="/presseside/script.js"></script>
+</body>
+</html>
