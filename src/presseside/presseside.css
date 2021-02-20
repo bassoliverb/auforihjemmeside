@@ -20,9 +20,9 @@ body{
 
 .nav a{
     text-decoration: none;
-    background-color: rgb(255, 235, 184);
+    border: solid 2px rgb(91, 91, 91);
     padding: 1.5rem 4em;
-    border-radius: 1em;
+    border-radius: 0em;
     /*box-shadow: 0px 0px 0px 1px gray;*/
     transition: 0.2s;
 }
@@ -37,6 +37,7 @@ body{
 
 .nav a:hover{
     background-color: rgb(255, 202, 68);
+    border: solid 2px rgb(255, 202, 68);
     
 }
 
@@ -48,6 +49,27 @@ body{
     background-color: white;
     font-size: 16px;
     box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
+}
+
+header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -6rem;
+    color: #a0a0a0;
+    display: none;
+}
+
+header:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
 }
 
 h1{
@@ -86,7 +108,6 @@ ul{
     margin-top: 5rem;
     /*background-color: #262d46;*/
     background-color: white;
-    font-size: 16px;
     box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
     display: flex;
     align-items: center;
@@ -94,7 +115,7 @@ ul{
 }
 
 .music_player button{
-    padding: 1em;
+
     margin: 0px 10px;
 }
 
@@ -120,19 +141,39 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
 
 }
 
 .right .io button{
-    background-color: orange;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: none;
+}
+
+.right .io button:nth-child(2){
+    height: 90px;
+    width: 90px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
 }
 
 .right #song_title{
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .right #release{
@@ -140,7 +181,7 @@ ul{
     top: 95px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .right .duration{
@@ -173,7 +214,19 @@ ul{
     background-color: #e4e4e4;
     padding: 1em 2em;
     border-radius: 7px;
+    font-size: 20px;
 }
 .right .show_song_number p:nth-child(2){
     margin: 0 5px;
+}
+
+.right #currentTime{
+    position: absolute;
+    display: flex;
+    bottom: 15%;
+    font-size: 16px;
+}
+
+.right #currentTime span{
+    padding: 0px 132px;
 }
