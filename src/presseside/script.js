@@ -9,6 +9,9 @@ let present = document.querySelector('#present');
 let total = document.querySelector('#total');
 let release = document.querySelector('#release');
 let curtimeText = document.querySelector('#curtimeText');
+let select1 = document.querySelector('#songSelect1')
+let select2 = document.querySelector('#songSelect2')
+let select3 = document.querySelector('#songSelect3')
 
 let timer;
 let autoplay = 0;
@@ -122,6 +125,33 @@ function range_slider(){
         slider.value =  position;
        }
     }
+
+
+
+
+
+
+function songselect1(){
+    index_no = 0;
+    load_track(index_no);
+    playsong();
+}
+
+function songselect2(){
+    index_no = 1;
+    load_track(index_no);
+    playsong();
+}
+
+function songselect3(){
+    index_no = 2;
+    load_track(index_no);
+    playsong();
+}
+
+
+
+
 
 
     //Engelsk tekst//
