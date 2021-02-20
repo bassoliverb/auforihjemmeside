@@ -62,15 +62,9 @@ body{
   border-radius: 0.2rem;
 }
 
-/*.details { DEN GAMLE VERSION MED BOOKER PÅ
-  width: 35%;
-  padding: 18rem 5rem 0;
-  background-color: #f8f7f3;
-}*/
-
 .details {
   width: 35%;
-  padding: 25rem 5rem 0;
+  padding: 8rem 5rem 0;
   background-color: #f8f7f3;
 }
 
@@ -80,7 +74,7 @@ body{
 }
 
 .details ul {
-  padding: 0 0 20rem;
+  padding: 0 0 8rem;
   margin: 0;
 }
 
@@ -117,6 +111,14 @@ h2 > a {
 }
 h2 > a:hover {
   text-decoration: underline;
+}
+
+.soso{
+  padding-top: 3rem;
+}
+
+.soso img{
+  width: 16rem;
 }
 
 @media screen and (max-width: 1000px) {
