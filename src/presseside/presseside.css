@@ -11,7 +11,8 @@ body{
   }
 
 .nav{
-    width: 1000px;
+    left: 0;
+    right: 0;
     position: absolute;
     margin: 6rem 0px;
     font-size: 16px;
@@ -80,7 +81,12 @@ h1{
 
 .definition{
     margin: 2.5em 3em;
+    
+}
+
+.definition p{
     font-style: italic;
+    margin: 0;
 }
 
 .citat{
@@ -156,7 +162,6 @@ ul{
 }
 
 .left img{
-    height: 95%;
     width: 95%;
     user-select: none;
     -webkit-user-drag: none;
@@ -201,16 +206,12 @@ ul{
 .right #song_title{
     position: absolute;
     top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 30px;
 }
 
 .right #release{
     position: absolute;
     top: 125px;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 18px;
 }
 
@@ -259,8 +260,12 @@ ul{
     font-size: 16px;
 }
 
-.right #currentTime span{
-    padding: 0px 132px;
+#curtimetext{
+    padding-right: 132px;
+}
+
+#curtimeText{
+    padding-left: 132px;
 }
 
 .songrow{
@@ -278,13 +283,430 @@ ul{
     user-select: none;
 }
 
+.papir div p img{
+    width: 18em; 
+    float: right; 
+    margin-top: -16rem; 
+    margin-right: -7rem; 
+    user-select: none;
+}
+
 
 
 
 .outro{
     margin-top: 5rem;
-    padding: 5rem 13rem;
+    padding: 3rem 0rem 2rem 0rem;
     background-color: white;
     font-size: 16px;
     box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.outro div{
+    width: 100%;
+    text-align: center;
+    height: 24rem;
+    padding: 0 5rem;
+}
+
+.outro div:nth-child(2){
+    border-left: solid 1px rgb(185, 185, 185);
+    border-right: solid 1px rgb(185, 185, 185);
+}
+
+.downloads p{
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+
+.downloads p a{
+    color: black;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: solid 2px;
+}
+
+.downloads p a:hover{
+    border: solid 1px;
+}
+
+.kontaktinfo p{
+    text-align: left;
+}
+
+.links p{
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.links p a:visited, .links p a{
+    color: rgb(0, 43, 116);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .left img {
+        width: 47.5vw;
+    }
+
+    .left, .right{
+        height: 50vw;
+    }
+
+    #curtimetext{
+        padding-right: 13vw;
+    }
+
+    #curtimeText{
+        padding-left: 13vw;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .papir{
+        padding: 9rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .right #song_title, .top{
+        font-size: 26px;
+    }
+
+    .right #release{
+        font-size: 16px;
+        top: 120px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .papir{
+        padding: 9rem 9rem 9rem 6rem;
+    }
+
+    .songrow{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .papir div p img{
+        width: 14em;
+        margin-right: -5rem;
+    }
+
+    .songrow{
+        font-size: 12px;
+    }
+
+    .songrow p{
+        margin: 1rem 0.5rem;
+    }
+
+    .right #currentTime{
+        font-size: 13px;
+    }
+
+    .right .io button{
+        font-size: 18px;
+    }
+    
+    .right .io button:nth-child(2){
+        font-size: 30px;
+    }
+
+    .outro div{
+        padding: 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 645px) {
+    .papir div p img{
+        width: 11em;
+        margin-right: -4rem;
+    }
+
+    .right #song_title, .top{
+        font-size: 22px;
+    }
+
+    .right #song_title {
+        top: 45px;
+    }
+
+    .right #release{
+        font-size: 14px;
+        top: 85px;
+    }
+
+    .songrow{
+        font-size: 12px;
+    }
+
+    .songrow p{
+        margin: 1rem 0rem;
+        padding: 0.2rem 0.7rem;
+        transform: translateX(0px);
+    }
+
+    .right .io button{
+        font-size: 16px;
+    }
+    
+    .right .io button:nth-child(2){
+        font-size: 25px;
+    }
+
+    .right .duration{
+        bottom: 12%;
+    }
+
+    .right #currentTime{
+        bottom: 5%;
+    }
+
+    .outro .downloads{
+        display: none;
+    }
+
+    .outro{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .outro div:nth-child(2){
+        border-left: none;
+    }
+
+    .outro div{
+        padding: 0px 4rem;
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .papir div p img{
+        width: 9em;
+    }
+
+    .songrow{
+        font-size: 10px;
+    }
+
+    .songrow p{
+        padding: 0.2rem 1rem;
+    }
+    .citat, .citat-slut{
+        font-size: 14px;
+    }
+
+    .papir div p img{
+        margin-right: 0em;
+        margin-top: -12rem;
+    }
+
+    header{
+        margin-top: -4rem;
+    }
+
+    .right #song_title{
+        font-size: 20px;
+    }
+
+    .right #release{
+        font-size: 13px;
+        top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .papir{
+        font-size: 14px;
+        padding: 7rem 5rem 6rem 5rem;
+    }
+
+    .music{
+        flex-direction: column;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .left img{
+        width: 160%;
+        margin-top: 2rem;
+        box-shadow: 0px 3px 20px 0px #b0b0bf;
+    }
+
+    .left, .right{
+        height: 100%;
+    }
+
+    .top{
+        padding: 2rem 2rem 1rem 2rem;
+    }
+
+    .songrow{
+        top: 10px;
+        width: 100%;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .right .duration input[type="range"]{
+        width: 70%;
+    }
+
+    .right #song_title{
+        top: 70px;
+    }
+
+    .right #release{
+        font-size: 13px;
+        top: 105px;
+    }
+    
+    .right .io{
+        margin-top: 10em;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    #curtimetext{
+        padding-right: 28vw;
+    }
+
+    #curtimeText{
+        padding-left: 28vw;
+    }
+
+    .right .io button{
+        height: 50px;
+    }
+    
+    .right .io button:nth-child(2){
+        height: 50px;
+    }
+
+    .outro{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .outro div:nth-child(2){
+        border-right: none;
+    }
+
+    .outro div:nth-child(3){
+        border-right: none;
+        border-top: solid 1px rgb(185, 185, 185);
+        padding-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .outro div{
+        height: 22rem;
+        width: 80%;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 645px) and (min-aspect-ratio: 4/8){
+    .right #song_title{
+        top: 45px
+    }
+
+    .right #release{
+        top: 80px;
+    }
+
+    .right .io{
+        margin-top: 7em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .citat, .citat-slut{
+        padding: 0px 3em;
+    }
+
+    .nav{
+        font-size: 12px;
+        margin: 4rem;
+    }
+
+    .papir{
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .papir div p img{
+        width: 8em;
+        margin-top: -11rem;
+        margin-right: -1rem;
+    }
+
+    .left img{
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .papir{
+        padding: 6rem 3rem 3rem 3rem;
+    }
+
+    header{
+        margin-top: -3.5rem;
+    }
+
+    .nav a{
+        padding: 1rem 3em;
+    }
+
+    .top{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .papir div p img{
+        width: 6em;
+        margin-top: -9rem;
+    }
+
+    .papir{
+        padding: 4rem 3rem 3rem 3rem;
+    }
+
+    header{
+        margin-top: -2rem;
+    }
+
+    .nav{
+        margin: 4rem 3rem;
+    }
+
+    .nav a{
+        padding: 1rem 2em;
+    }
+
+
+
+
+
 }
