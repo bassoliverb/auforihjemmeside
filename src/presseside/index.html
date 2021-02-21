@@ -82,39 +82,48 @@
     </section>
 <section class="music_player">
 
-    <!--<div class="top">Hør vores musik</div>-->
+    <div id="dansk1" class="top active">Hør vores musik</div>
+    <div id="engelsk1" class="top inactive">Check out these songs</div>
+    <div class="music">
+        <div class="left">
+            <img id="track_image">
+        </div>
 
-    <div class="left">
-        <img id="track_image">
+        <div class="right">
+            <div class="show_song_number">
+                <p id="present">1</p>
+                <p>/</p>
+                <p id="total">3</p>
+            </div>
+            <div class="songrow">
+                <p onclick="songselect1()" onmouseover="select1Hover(this)" onmouseout="select1DeHover(this)" id="songSelect1">Bløde Universer</p>
+                <p onclick="songselect2()" onmouseover="select2Hover(this)" onmouseout="select2DeHover(this)" id="songSelect2">Åbne Favne</p>
+                <p onclick="songselect3()" onmouseover="select3Hover(this)" onmouseout="select3DeHover(this)" id="songSelect3">Stjernetråde</p>
+            </div>
+            <p id="song_title">Bløde Universer</p>
+            <p id="release">2021 - Single</p>
+
+            <div class="io">
+                <button onclick="previous_song()" id="pre"><i class="fas fa-step-backward"></i></button>
+                <button onclick="justplay()" id="play"><i class="fas fa-play"></i></button>
+                <button onclick="next_song()" id="next"><i class="fas fa-step-forward"></i></button>
+            </div>
+
+            <div id="currentTime">
+                <span id="curtimetext">0:00</span>
+                <span id="curtimeText">0:00</span>
+            </div>
+
+            <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+            </div>
     </div>
-
-    <div class="right">
-        <div class="show_song_number">
-            <p id="present">1</p>
-            <p>/</p>
-            <p id="total">3</p>
-        </div><!----
-        <p onclick="songselect1()" id="songselect1">Bløde Universer</p>
-        <p onclick="songselect2()" id="songselect2">Åbne Favne</p>
-        <p onclick="songselect3()" id="songselect3">Stjernetråde</p>-->
-        <p id="song_title">Bløde Universer</p>
-        <p id="release">2021 - Single</p>
-
-        <div class="io">
-            <button onclick="previous_song()" id="pre"><i class="fas fa-step-backward"></i></button>
-            <button onclick="justplay()" id="play"><i class="fas fa-play"></i></button>
-            <button onclick="next_song()" id="next"><i class="fas fa-step-forward"></i></button>
-        </div>
-
-        <div id="currentTime">
-            <span id="curtimetext">0:00</span>
-            <span id="curtimeText">0:00</span>
-        </div>
-
-        <div class="duration">
-        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
-        </div>
-    </div>
+</div>
+</section>
+<section class="outro">
+    <p><a href="/material/AUFORIPressefotos.zip" download="/material/AUFORIPressefotos.zip">Download pressefotos</a></p>
+    <p>Kontaktinfo</p>
+    <p>Links</p>
 </section>
 </main>
 <module>modules/footer.html</module>

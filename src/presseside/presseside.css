@@ -108,17 +108,36 @@ ul{
 
 
 
-
-
 .music_player{
+    display: block;
     margin-top: 5rem;
-    /*background-color: #262d46;*/
     background-color: white;
     box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.music_player .music{
+    margin-top: 5rem;
+    background-color: white;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.top{
+    text-align: center;
+    margin-bottom: -4rem;
+    border-bottom: solid 1px #b9b9b9;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem 2rem 2rem;
+    font-size: 30px;
+}
+
 
 .music_player button{
 
@@ -148,7 +167,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 7em;
 
 }
 
@@ -181,7 +200,7 @@ ul{
 
 .right #song_title{
     position: absolute;
-    top: 40px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
@@ -189,7 +208,7 @@ ul{
 
 .right #release{
     position: absolute;
-    top: 95px;
+    top: 125px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
@@ -214,18 +233,19 @@ ul{
 
 .right .show_song_number{
     position: absolute;
-    top: 15px;
+    top: 0px;
     right: 15px;
     width: 30px;
     height: 20px;
-    display: flex;
+    /*display: flex;*/
+    display: none;                          /*KILLER!!*/
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
     /*background-color: #e4e4e4;*/
     padding: 1em 2em;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 15px;
     user-select: none;
 }
 .right .show_song_number p:nth-child(2){
@@ -241,4 +261,30 @@ ul{
 
 .right #currentTime span{
     padding: 0px 132px;
+}
+
+.songrow{
+    display: inline-flex;
+    position: absolute;
+    top: 2px;
+    font-size: 14px;
+}
+
+.songrow p{
+    padding: 0.2rem 1rem;
+    margin: 1rem 1rem;
+    transform: translateX(-10%);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.outro{
+    margin-top: 5rem;
+    padding: 5rem 13rem;
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0px 0px 59px -28px rgba(0,0,0,0.75);
 }
