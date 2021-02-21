@@ -156,7 +156,7 @@ tr>td:nth-child(3) {
   }
 
   .koncerttabel {
-    width: 600px;
+    max-width: 600px;
   }
   .dato{
   	font-size: 1.7rem;
@@ -184,7 +184,7 @@ tr>td:nth-child(3) {
   }
 
   .koncerttabel {
-    width: 400px;
+    max-width: 400px;
   }
   .dato {
   	width: 7rem;
@@ -226,7 +226,7 @@ tr>td:nth-child(3) {
   }
 
   .koncerttabel {
-    width: 270px;
+    max-width: 270px;
   }
 
   tr {
