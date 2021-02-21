@@ -222,6 +222,8 @@ function select3DeHover(x){
     const engelsk = document.getElementById('engelsk');
     const dansk1 = document.getElementById('dansk1');
     const engelsk1 = document.getElementById('engelsk1');
+    const dansk2 = document.getElementById('dansk2');
+    const engelsk2 = document.getElementById('engelsk2');
 
 btn1.addEventListener('click', () =>{
     btn1.classList.remove('active');
@@ -234,6 +236,10 @@ btn1.addEventListener('click', () =>{
     dansk1.classList.add('inactive')
     engelsk1.classList.add('active');
     engelsk1.classList.remove('inactive');
+    dansk2.classList.remove('active');
+    dansk2.classList.add('inactive')
+    engelsk2.classList.add('active');
+    engelsk2.classList.remove('inactive');
 })
 
 btn2.addEventListener('click', () =>{
@@ -247,5 +253,9 @@ btn2.addEventListener('click', () =>{
     dansk1.classList.remove('inactive')
     engelsk1.classList.remove('active');
     engelsk1.classList.add('inactive');
+    dansk2.classList.add('active');
+    dansk2.classList.remove('inactive')
+    engelsk2.classList.remove('active');
+    engelsk2.classList.add('inactive');
 })
     
