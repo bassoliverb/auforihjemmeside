@@ -44,11 +44,11 @@ let all_song = [
         underline3: "none"
     },
     {
-        name: "Stjernetråde",
-        path: "/audio/stjernetraade.mp3",
+        name: "Overflader",
+        path: "/audio/overflader.mp3",
         img: "/images/overflader-album.jpg",
         udgivelse: "Overflader (album 2020)",
-        tid: "4:11",
+        tid: "3:44",
         underline1: "none",
         underline2: "none",
         underline3: "solid 2px #ffc967"
