@@ -26,7 +26,7 @@ let all_song = [
     {
         name: "Bløde Universer",
         path: "/audio/blode_universer.mp3",
-        img: "/images/blode_universer.png",
+        img: "/images/blode_universer.jpg",
         udgivelse: "Single 2021",
         tid: "5:27",
         underline1: "solid 2px #ffc967",
