@@ -143,6 +143,14 @@ tr>td:nth-child(3) {
 	border: 1px;
 }
 
+.soon{
+	padding-top: 5rem;
+	font-size: 18px;
+	text-align: center;
+	font-style: italic;
+	color: gray;
+}
+
 /*///////////////////////////////////////////////////////////*/
 
 

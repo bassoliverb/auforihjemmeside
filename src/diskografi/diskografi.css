@@ -46,10 +46,10 @@ section {
 	margin: 5rem auto;
 	/*padding: 10rem 0;*/
 	width: 900px;
-	height: 900px;
+	height: 1350px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	grid-gap: 3.5rem;
 }
 
@@ -68,9 +68,12 @@ section {
 .blaamaerker{
 	background-image: url(/images/blaa-maerker.jpg);
 }
+.bloedeuniverser{
+	background-image: url(/images/blode_universer.jpg);
+}
 
 
-.runddans, .overflader, .stjernetraade, .blaamaerker {
+.runddans, .overflader, .stjernetraade, .blaamaerker, .bloedeuniverser {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -97,6 +100,10 @@ section {
 	background-color: rgba(92,151,212, 0.7);
 }
 
+.bloedeuniverser > .songlist {
+	background-color: rgba(92,151,212, 0.7);
+}
+
 .songlist{
 	z-index: 2;
 	width: 60%;
@@ -113,7 +120,8 @@ section {
 .runddans:hover .songlist,
 .overflader:hover .songlist,
 .stjernetraade:hover .songlist,
-.blaamaerker:hover .songlist{
+.blaamaerker:hover .songlist,
+.bloedeuniverser:hover .songlist{
 	transform: translateX(1%);
 }
 
@@ -124,6 +132,10 @@ h1 {
 	font-size: 3.2rem;
 	white-space: nowrap;
 	font-family: Source Serif Pro, serif;
+}
+.bloedeuniverser .songlist h1{
+	font-size: 2.8rem;
+	margin-bottom: 3rem;
 }
 
 h2 {
