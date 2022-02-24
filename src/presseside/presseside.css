@@ -320,7 +320,7 @@ ul{
     margin: 0;
     width: 100%;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .downloads p a{
@@ -392,6 +392,10 @@ ul{
 
     .songrow{
         font-size: 13px;
+    }
+
+    .downloads p a{
+        font-size: 14px;
     }
 
 }
@@ -473,16 +477,30 @@ ul{
         bottom: 5%;
     }
 
-    .outro .downloads{
-        display: none;
-    }
-
     .outro{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .outro div:nth-child(2){
+        border-right: none;
         border-left: none;
+        border-top: solid 1px rgb(185, 185, 185);
+        padding-top: 4rem;
+    }
+
+    .outro div:nth-child(3){
+        border-right: none;
+        border-top: solid 1px rgb(185, 185, 185);
+        padding-top: 3rem;
+        margin-bottom: 5rem;
+        margin-top: 8rem;
+    }
+
+    .outro div{
+        height: 22rem;
+        width: 80%;
+        margin: auto;
     }
 
     .outro div{
@@ -595,30 +613,6 @@ ul{
     .right .io button:nth-child(2){
         height: 50px;
     }
-
-    .outro{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .outro div:nth-child(2){
-        border-right: none;
-    }
-
-    .outro div:nth-child(3){
-        border-right: none;
-        border-top: solid 1px rgb(185, 185, 185);
-        padding-top: 4rem;
-        margin-bottom: 5rem;
-    }
-
-    .outro div{
-        height: 22rem;
-        width: 80%;
-        margin: auto;
-    }
-
-
 }
 
 @media screen and (max-width: 645px) and (min-aspect-ratio: 4/8){
