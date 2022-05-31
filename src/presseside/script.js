@@ -24,31 +24,31 @@ let track = document.createElement('audio');
 
 let all_song = [
     {
-        name: "Bløde Universer",
-        path: "/audio/blode_universer.mp3",
-        img: "/images/blode_universer.jpg",
-        udgivelse: "Single 2021",
-        tid: "5:27",
+        name: "Rygsæk",
+        path: "/audio/rygsaek.mp3",
+        img: "/images/aufori_icon.jpg",
+        udgivelse: "Out soon!",
+        tid: "4:17",
         underline1: "solid 2px #ffc967",
         underline2: "none",
+        underline3: "none"
+    },
+    {
+        name: "Porcelænshav",
+        path: "/audio/porcelaenshav.mp3",
+        img: "/images/aufori_icon.jpg",
+        udgivelse: "Out soon!",
+        tid: "5:08",
+        underline1: "none",
+        underline2: "solid 2px #ffc967",
         underline3: "none"
     },
     {
         name: "Åbne Favne",
         path: "/audio/aabne_favne.mp3",
         img: "/images/runddans.jpg",
-        udgivelse: "Runddans (album 2018)",
+        udgivelse: "Runddans (album 2020)",
         tid: "2:25",
-        underline1: "none",
-        underline2: "solid 2px #ffc967",
-        underline3: "none"
-    },
-    {
-        name: "Overflader",
-        path: "/audio/overflader.mp3",
-        img: "/images/overflader-album.jpg",
-        udgivelse: "Overflader (album 2020)",
-        tid: "3:44",
         underline1: "none",
         underline2: "none",
         underline3: "solid 2px #ffc967"
