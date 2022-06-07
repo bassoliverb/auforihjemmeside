@@ -1,0 +1,47 @@
+main{
+  padding-top: 10rem;
+}
+
+body{
+	background-image: url(/images/raat_papir3.png);
+	background-size: auto 100vh;
+  width: 800px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-size: 100%;
+  font-family: Source Sans pro, sans-serif;
+}
+
+.videobox{
+
+}
+
+.framecontain{
+  float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.frame-contain iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .videoframe{
+    width: 800px;
+    margin: 3rem auto 5rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .videoframe{
+    width: 100vw;
+  }
+}

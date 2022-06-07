@@ -65,7 +65,7 @@ body {
 
 tr {
 	height: 12rem;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 	border-top: 1px solid black;
 }
 
@@ -89,11 +89,12 @@ tr>td:nth-child(2) {
 
 tr>td:nth-child(3) {
 	text-align: left;
+	padding-left: 3rem;
 	/*width: 30%;*/
 }
 
 .dato {
-	/*background-color: #ffffff9e;*/
+	background-color: #f3f4f6;
 	border-radius: 10px;
 	height: 7rem;
 	width: 10rem;
@@ -153,6 +154,11 @@ tr>td:nth-child(3) {
 
 /*///////////////////////////////////////////////////////////*/
 
+@media screen and (max-width: 1000px) {
+	main{
+		padding-top: 0rem !important;
+	}
+}
 
 @media screen and (max-width: 950px) {
   .art-container, .sensommertur{
@@ -187,23 +193,25 @@ tr>td:nth-child(3) {
 }
 
   .koncert-container{
-  	max-width: 450px;
-  	margin-top: 25rem;
+  	max-width: 100%;
+	margin: 0;
   }
 
   .koncerttabel {
-    width: 400px;
+    width: 100%;
   }
   .dato {
-  	width: 7rem;
+  	width: 9rem;
   	font-size: 1.5rem;
+	margin-left: 10px;
   }
   tr {
   	font-size: 1.5rem;
   }
 
-  .koncert-container {
-	margin: 0 auto;
+  .koncert-container .head {
+	  height: 10rem;
+	  padding: 0 7%;
   }
 
   .head p{
@@ -218,7 +226,7 @@ tr>td:nth-child(3) {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
   .art-container, .sensommertur{
   	width: 300px;
@@ -228,17 +236,8 @@ tr>td:nth-child(3) {
   	margin-top: -10rem;
   }
 
-  .koncert-container{
-  	max-width: 300px;
-  	margin-top: 25rem;
-  }
-
-  .koncerttabel {
-    width: 270px;
-  }
-
   tr {
-  	font-size: 1.2rem;
+  	font-size: 1.4rem;
   	height: 10rem;
   }
 .mereinfo a{
@@ -247,30 +246,47 @@ tr>td:nth-child(3) {
 	font-size: 1.2rem;
 }
   .dato {
-  	width: 5.5rem;
+  	width: 6.5rem;
   	font-size: 1.2rem;
-  	margin-left: 0;
   	height: 5.5rem;
   }
   tr>td:nth-child(2) {
 	text-align: left;
 }
 
-.koncert-container {
-	margin: 0 auto;
-  }
-
 .head p{
-	font-size: 2em;
+	font-size: 2.4em;
 }
 
 .koncert-container .head {
 	height: 10em;
 }
 
-.koncert-container .head img {
-  width: 50px;
-  margin-bottom: -7rem;
-  margin: 0 0 -30px 0;
+.koncert-container p {
+	margin: 0;
 }
+
+.koncert-container .head img {
+  width: 70px;
+  margin-bottom: -7rem;
+  margin: 0 0 -55px 0;
+}
+
+tr>td:nth-child(3) {
+	padding-left: 2rem;
+}
+}
+
+@media screen and (max-width: 500px) {
+	tr {
+		font-size: 1.2rem;
+	}
+
+	tr>td:nth-child(2) {
+		text-align: center;
+	}
+
+	.koncert-container {
+		padding: 1rem;
+	}
 }
