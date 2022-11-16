@@ -26,8 +26,8 @@ let all_song = [
     {
         name: "Rygsæk",
         path: "/audio/rygsaek.mp3",
-        img: "/images/aufori_icon.jpg",
-        udgivelse: "Out soon!",
+        img: "/images/rygsaek.jpg",
+        udgivelse: "Sjæletag (EP 2022)",
         tid: "4:17",
         underline1: "solid 2px #ffc967",
         underline2: "none",
@@ -36,8 +36,8 @@ let all_song = [
     {
         name: "Porcelænshav",
         path: "/audio/porcelaenshav.mp3",
-        img: "/images/aufori_icon.jpg",
-        udgivelse: "Out soon!",
+        img: "/images/porcelaenshav.jpg",
+        udgivelse: "Sjæletag (EP 2022)",
         tid: "5:08",
         underline1: "none",
         underline2: "solid 2px #ffc967",
