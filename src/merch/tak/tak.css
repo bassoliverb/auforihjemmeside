@@ -1,0 +1,84 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: Sans pro, sans-serif;
+}
+
+body{
+  background-image: url(/images/raat_papir3.png);
+  background-size: auto 100vh;
+  width: 100rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+.tak{
+  margin: 25rem auto;
+  padding: 10rem 5rem;
+  background-color: #f8f7f3;
+  box-shadow: 1px 10px 25px 0px rgb(0 0 0 / 10%);
+  outline: 1px solid black;
+  outline-offset: -10px;
+  font-family: source serif pro;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
+}
+
+h3{
+  text-align: center;
+  padding-top: 6rem;
+  margin-bottom: -6rem;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.blomst1{
+  position: absolute;
+  width: 185px;
+  z-index: 10;
+  left: 14rem;
+  margin-top: -75rem;
+  transform: rotate(224deg);
+}
+
+.blomst1 img {
+  width: 100%;
+}
+
+.blomst2{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  bottom: 35rem;
+  right: -8rem;
+  transform: rotate(160deg) scaleX(-1);
+}
+
+.blomst2 img {
+  width: 100%;
+}
+
+.blomst3{
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+  bottom: 15rem;
+  left: 0rem;
+  transform: rotate(80deg) scaleX(-1);
+}
+
+.blomst3 img {
+  width: 100%;
+}

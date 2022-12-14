@@ -12,58 +12,83 @@
     <meta property="og:url" content="https://aufori.dk/merch">
     <link rel="canonical" href="https://aufori.dk/merch">
     <script src="https://kit.fontawesome.com/75ec2819b5.js" crossorigin="anonymous"></script>
+    <script src="myform.js"></script>
   </head>
   <body>
     <module>modules/navigation.html</module>
     <main>
-      
-      <div class="title">
-      <h1>Butik</h1>
-      <h2>Her kan du se vores lille udvalg af produkter, som vi laver. <br>
-          Vi administrerer alt salget selv - hvis du er interesseret i at bestille noget, så udfyld formularen nederst på siden :-) <br>
-          Vi kan sagtens sende med post til din adresse</h2>
-      </div>
-      
-      <div class="sortiment">
-        <div class="produkt"><img src="/images/Vinyl cover.png" alt="Vinyl"> 
-          <div>
-            <p>Porcelænshav Vinyl <br> 250kr</p>
-          </div>
+      <div class="omfavn">
+        <div class="title">
+        <h1>AUFORI Merch</h1>
+        <h2>Her kan du se vores lille udvalg af produkter, som vi laver</h2>
         </div>
-
-        <div class="produkt"><img src="/images/muleposeskitse.png" alt="Mulepose">
-          <div>
-            <p>AUFORI Mulepose <br> 120kr</p>
-          </div>  
-        </div>
-      </div>
-      
-      <section>
-        <p>Opret bestilling</p>
-        <form class="kontaktformular" action="https://submit-form.com/WElnbqUh">
-
-          
-          <div class="row">  
-            <div class="inputfelt">
-              <input type="text" name="navn" id="navn" required>
-              <label for="navn"><i class="fa-solid fa-user"></i> &nbsp;Fulde navn</label>
-            </div>
-            <div class="inputfelt">
-              <input type="text" name="email" id="email" required>
-              <label for="email"><i class="fa-solid fa-envelope"></i> &nbsp;E-mail</label>
+        
+        <div class="preprodukt"> <p>Klik på billederne for at få flere detaljer</p> </div>
+        <div class="sortiment">
+          <div class="produkt"><img src="/images/Vinyl cover.png" alt="Vinyl"> 
+            <div>
+              <p>Porcelænshav Vinyl <br> 250kr</p>
             </div>
           </div>
-          <div class="inputfelt">
-            <input type="text" name="adresse" id="adresse" required>
-            <label for="adresse"><i class="fa-solid fa-house"></i> &nbsp;Adresse</label>
+
+          <div class="produkt"><img src="/images/muleposeskitse.png" alt="Mulepose">
+            <div>
+              <p>AUFORI Mulepose <br> 120kr</p>
+            </div>  
           </div>
-          <div class="inputfelt">
-            <textarea name="besked" id="besked" rows="8" autocomplete="off" required></textarea>
-            <label for="besked"><i class="fa-solid fa-pen"></i> &nbsp;Besked</label>
+          <div class="produkt"><img src="/images/noder/aabne-favne.png" alt="Node"> 
+            <div>
+              <p>Noder <br> 50kr pr sang</p>
+              <!--<h5>Klik på billedet for uddybning</h5>-->
+            </div>
           </div>
-          <button type="submit" name="submit">Send bestilling</button>
-        </form>
-      </section>
+        </div>
+        
+        <div class="conditions">
+          <p>Vi administrerer alt salget selv - dvs at alt overskud af salget går direkte til at støtte bandet financielt (Juhuu!!) <br>
+              Hvis du gerne vil igangsætte en bestilling, så kan du udfylde formularen nedenfor</p>
+          <ul>
+            <li>Betaling foregår via bankoverførsel</li>
+            <li>Fragt: Alle produkter kan fragtes til din adresse eller nærmeste posthus for yderligere 50kr.</li>
+            <ul>
+              <li>Alternativt kan afhentning i København eller Aarhus aftales. Skriv dette i adressefeltet, hvis du ønsker det.</li>
+            </ul>
+            <li>Vi medbringer og sælger også muleposer og vinyler til vores koncerter. Kom og sig hej! :)</li>
+          </ul>
+        </div>
+
+        <section>
+          <p>Opret bestilling</p>
+          <form class="kontaktformular" action="https://submit-form.com/WElnbqUh">
+
+            
+            <div class="row">  
+              <div class="inputfelt">
+                <input type="text" name="Navn" id="navn" required>
+                <label for="navn"><i class="fa-solid fa-user"></i> &nbsp;Fulde navn</label>
+              </div>
+              <div class="inputfelt">
+                <input type="text" name="Email" id="email" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> &nbsp;E-mail</label>
+              </div>
+            </div>
+            <div class="inputfelt">
+              <input type="text" name="Adresse" id="adresse" required>
+              <label for="adresse"><i class="fa-solid fa-house"></i> &nbsp;Adresse</label>
+            </div>
+            <div class="inputfelt">
+              <textarea name="Besked" id="besked" rows="8" autocomplete="off" required></textarea>
+              <label for="besked"><i class="fa-solid fa-pen"></i> &nbsp;Besked</label>
+            </div>
+            <button type="submit">Send bestilling</button>
+
+            <input type="hidden" name="_email.subject" value="Ny AUFORI merch bestilling!">
+            <input type="hidden" name="_redirect" value="https://aufori.dk/merch/tak">
+            <input type="hidden" name="_append" value="false">
+
+          </form>
+        </section>
+      </div>
     </main>
     <module>modules/footer.html</module>
     <module>modules/cookie.html</module>
