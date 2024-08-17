@@ -66,11 +66,12 @@ body{
   width: 35%;
   padding: 8rem 5rem 0;
   background-color: #f8f7f3;
+  text-align: center;
 }
 
 .details h1 {
   font-size: 3rem;
-  margin: 0 0 1rem;
+  margin: 10rem 0 2rem;
 }
 
 .details ul {
@@ -119,6 +120,19 @@ h2 > a:hover {
 
 .soso img{
   width: 16rem;
+}
+
+.auforilogo{
+  padding-top: 5rem;
+}
+
+.auforilogo img{
+  width: 20rem;
+}
+
+p{
+  margin: 0 0 8rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1000px) {
